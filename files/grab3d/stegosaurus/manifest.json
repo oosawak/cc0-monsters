@@ -1,0 +1,51 @@
+{
+ "slug": "stegosaurus",
+ "triangles": 375857,
+ "texture_px": 4096,
+ "triangles_light": 187928,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "stegosaurus.glb",
+   "bytes": 15886120
+  },
+  "blend": {
+   "name": "stegosaurus.blend",
+   "bytes": 18846218
+  },
+  "fbx": {
+   "name": "stegosaurus.fbx",
+   "bytes": 25673852
+  },
+  "obj": {
+   "name": "stegosaurus-obj.zip",
+   "bytes": 12968891
+  },
+  "usdz": {
+   "name": "stegosaurus.usdz",
+   "bytes": 23775710
+  },
+  "glb_light": {
+   "name": "stegosaurus-light.glb",
+   "bytes": 6033256
+  },
+  "fbx_light": {
+   "name": "stegosaurus-light.fbx",
+   "bytes": 11749852
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "1.893 x 8.999 x 3.924",
+  "triangles": 375857,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-10-29"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

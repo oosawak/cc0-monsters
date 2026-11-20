@@ -1,0 +1,51 @@
+{
+ "slug": "griffin",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 399999,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "griffin.glb",
+   "bytes": 29752192
+  },
+  "blend": {
+   "name": "griffin.blend",
+   "bytes": 36906338
+  },
+  "fbx": {
+   "name": "griffin.fbx",
+   "bytes": 51463964
+  },
+  "obj": {
+   "name": "griffin-obj.zip",
+   "bytes": 23306467
+  },
+  "usdz": {
+   "name": "griffin.usdz",
+   "bytes": 46146890
+  },
+  "glb_light": {
+   "name": "griffin-light.glb",
+   "bytes": 12835656
+  },
+  "fbx_light": {
+   "name": "griffin-light.fbx",
+   "bytes": 25282156
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "3.999 x 2.582 x 2.959",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "slug": "spirit-stag",
+ "triangles": 799999,
+ "texture_px": 4096,
+ "triangles_light": 399999,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "spirit-stag.glb",
+   "bytes": 29436540
+  },
+  "blend": {
+   "name": "spirit-stag.blend",
+   "bytes": 36455421
+  },
+  "fbx": {
+   "name": "spirit-stag.fbx",
+   "bytes": 50299628
+  },
+  "obj": {
+   "name": "spirit-stag-obj.zip",
+   "bytes": 22354611
+  },
+  "usdz": {
+   "name": "spirit-stag.usdz",
+   "bytes": 45380247
+  },
+  "glb_light": {
+   "name": "spirit-stag-light.glb",
+   "bytes": 12754896
+  },
+  "fbx_light": {
+   "name": "spirit-stag-light.fbx",
+   "bytes": 24967884
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "1.469 x 1.596 x 2.300",
+  "triangles": 799999,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

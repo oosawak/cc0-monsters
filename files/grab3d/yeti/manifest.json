@@ -1,0 +1,51 @@
+{
+ "slug": "yeti",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 399999,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "yeti.glb",
+   "bytes": 27109412
+  },
+  "blend": {
+   "name": "yeti.blend",
+   "bytes": 32852488
+  },
+  "fbx": {
+   "name": "yeti.fbx",
+   "bytes": 48151548
+  },
+  "obj": {
+   "name": "yeti-obj.zip",
+   "bytes": 20003645
+  },
+  "usdz": {
+   "name": "yeti.usdz",
+   "bytes": 42873925
+  },
+  "glb_light": {
+   "name": "yeti-light.glb",
+   "bytes": 13232520
+  },
+  "fbx_light": {
+   "name": "yeti-light.fbx",
+   "bytes": 25834156
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "2.032 x 0.808 x 2.400",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-11-17"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

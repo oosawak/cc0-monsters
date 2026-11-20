@@ -1,0 +1,45 @@
+{
+ "slug": "low-poly-t-rex",
+ "triangles": 3998,
+ "texture_px": 24,
+ "triangles_light": null,
+ "texture_px_light": null,
+ "files": {
+  "glb": {
+   "name": "low-poly-t-rex.glb",
+   "bytes": 409836
+  },
+  "blend": {
+   "name": "low-poly-t-rex.blend",
+   "bytes": 228297
+  },
+  "fbx": {
+   "name": "low-poly-t-rex.fbx",
+   "bytes": 239724
+  },
+  "obj": {
+   "name": "low-poly-t-rex-obj.zip",
+   "bytes": 120011
+  },
+  "usdz": {
+   "name": "low-poly-t-rex.usdz",
+   "bytes": 405999
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "3.278 x 12.064 x 5.283",
+  "triangles": 4000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28",
+  "derived_from": "t-rex",
+  "style": "low poly, flat shaded, palette texture"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Derived in Blender from the AI-assisted model \"t-rex\", whose base mesh and textures were generated with an AI image-to-3D tool (Meshy). This version was reduced to low poly and given a palette texture in Blender.",
+  "ai_content": true
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "slug": "phoenix",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 399999,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "phoenix.glb",
+   "bytes": 28655980
+  },
+  "blend": {
+   "name": "phoenix.blend",
+   "bytes": 35452248
+  },
+  "fbx": {
+   "name": "phoenix.fbx",
+   "bytes": 49695372
+  },
+  "obj": {
+   "name": "phoenix-obj.zip",
+   "bytes": 21605710
+  },
+  "usdz": {
+   "name": "phoenix.usdz",
+   "bytes": 44377598
+  },
+  "glb_light": {
+   "name": "phoenix-light.glb",
+   "bytes": 13212488
+  },
+  "fbx_light": {
+   "name": "phoenix-light.fbx",
+   "bytes": 25777340
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "2.499 x 1.685 x 2.472",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

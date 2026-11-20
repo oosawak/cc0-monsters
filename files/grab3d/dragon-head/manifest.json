@@ -1,0 +1,51 @@
+{
+ "slug": "dragon-head",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 400000,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "dragon-head.glb",
+   "bytes": 30719984
+  },
+  "blend": {
+   "name": "dragon-head.blend",
+   "bytes": 36707249
+  },
+  "fbx": {
+   "name": "dragon-head.fbx",
+   "bytes": 52967916
+  },
+  "obj": {
+   "name": "dragon-head-obj.zip",
+   "bytes": 24847891
+  },
+  "usdz": {
+   "name": "dragon-head.usdz",
+   "bytes": 47564240
+  },
+  "glb_light": {
+   "name": "dragon-head-light.glb",
+   "bytes": 13352476
+  },
+  "fbx_light": {
+   "name": "dragon-head-light.fbx",
+   "bytes": 26145052
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "0.466 x 0.706 x 0.900",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-11-16"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

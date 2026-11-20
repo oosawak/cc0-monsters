@@ -1,0 +1,45 @@
+{
+ "slug": "low-poly-dragon-head",
+ "triangles": 5920,
+ "texture_px": 32,
+ "triangles_light": null,
+ "texture_px_light": null,
+ "files": {
+  "glb": {
+   "name": "low-poly-dragon-head.glb",
+   "bytes": 604804
+  },
+  "blend": {
+   "name": "low-poly-dragon-head.blend",
+   "bytes": 297221
+  },
+  "fbx": {
+   "name": "low-poly-dragon-head.fbx",
+   "bytes": 347580
+  },
+  "obj": {
+   "name": "low-poly-dragon-head-obj.zip",
+   "bytes": 172567
+  },
+  "usdz": {
+   "name": "low-poly-dragon-head.usdz",
+   "bytes": 600421
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "0.457 x 0.704 x 0.901",
+  "triangles": 6000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-11-16",
+  "derived_from": "dragon-head",
+  "style": "low poly, flat shaded, palette texture"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Derived in Blender from the AI-assisted model \"dragon-head\", whose base mesh and textures were generated with an AI image-to-3D tool (Meshy). This version was reduced to low poly and given a palette texture in Blender.",
+  "ai_content": true
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "slug": "dragon",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 400000,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "dragon.glb",
+   "bytes": 30633720
+  },
+  "blend": {
+   "name": "dragon.blend",
+   "bytes": 37824440
+  },
+  "fbx": {
+   "name": "dragon.fbx",
+   "bytes": 51890108
+  },
+  "obj": {
+   "name": "dragon-obj.zip",
+   "bytes": 23891445
+  },
+  "usdz": {
+   "name": "dragon.usdz",
+   "bytes": 46773940
+  },
+  "glb_light": {
+   "name": "dragon-light.glb",
+   "bytes": 12716504
+  },
+  "fbx_light": {
+   "name": "dragon-light.fbx",
+   "bytes": 25000444
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "4.999 x 3.169 x 3.611",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

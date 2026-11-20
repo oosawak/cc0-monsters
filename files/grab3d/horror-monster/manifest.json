@@ -1,0 +1,51 @@
+{
+ "slug": "horror-monster",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 400000,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "horror-monster.glb",
+   "bytes": 30770940
+  },
+  "blend": {
+   "name": "horror-monster.blend",
+   "bytes": 37357701
+  },
+  "fbx": {
+   "name": "horror-monster.fbx",
+   "bytes": 52609756
+  },
+  "obj": {
+   "name": "horror-monster-obj.zip",
+   "bytes": 23679016
+  },
+  "usdz": {
+   "name": "horror-monster.usdz",
+   "bytes": 46979672
+  },
+  "glb_light": {
+   "name": "horror-monster-light.glb",
+   "bytes": 12311876
+  },
+  "fbx_light": {
+   "name": "horror-monster-light.fbx",
+   "bytes": 24416348
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "1.022 x 0.400 x 2.200",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-26"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

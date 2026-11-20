@@ -1,0 +1,51 @@
+{
+ "slug": "unicorn",
+ "triangles": 799999,
+ "texture_px": 4096,
+ "triangles_light": 399998,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "unicorn.glb",
+   "bytes": 26244132
+  },
+  "blend": {
+   "name": "unicorn.blend",
+   "bytes": 33637314
+  },
+  "fbx": {
+   "name": "unicorn.fbx",
+   "bytes": 47820812
+  },
+  "obj": {
+   "name": "unicorn-obj.zip",
+   "bytes": 19386739
+  },
+  "usdz": {
+   "name": "unicorn.usdz",
+   "bytes": 42425635
+  },
+  "glb_light": {
+   "name": "unicorn-light.glb",
+   "bytes": 12247560
+  },
+  "fbx_light": {
+   "name": "unicorn-light.fbx",
+   "bytes": 24212972
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "0.782 x 2.395 x 2.400",
+  "triangles": 799999,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

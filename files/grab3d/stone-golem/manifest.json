@@ -1,0 +1,51 @@
+{
+ "slug": "stone-golem",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 399999,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "stone-golem.glb",
+   "bytes": 31789748
+  },
+  "blend": {
+   "name": "stone-golem.blend",
+   "bytes": 38829209
+  },
+  "fbx": {
+   "name": "stone-golem.fbx",
+   "bytes": 52628620
+  },
+  "obj": {
+   "name": "stone-golem-obj.zip",
+   "bytes": 24726238
+  },
+  "usdz": {
+   "name": "stone-golem.usdz",
+   "bytes": 47670610
+  },
+  "glb_light": {
+   "name": "stone-golem-light.glb",
+   "bytes": 12872244
+  },
+  "fbx_light": {
+   "name": "stone-golem-light.fbx",
+   "bytes": 25235308
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "2.487 x 0.938 x 2.800",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

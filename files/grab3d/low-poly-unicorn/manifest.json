@@ -1,0 +1,45 @@
+{
+ "slug": "low-poly-unicorn",
+ "triangles": 3496,
+ "texture_px": 24,
+ "triangles_light": null,
+ "texture_px_light": null,
+ "files": {
+  "glb": {
+   "name": "low-poly-unicorn.glb",
+   "bytes": 358576
+  },
+  "blend": {
+   "name": "low-poly-unicorn.blend",
+   "bytes": 209907
+  },
+  "fbx": {
+   "name": "low-poly-unicorn.fbx",
+   "bytes": 212844
+  },
+  "obj": {
+   "name": "low-poly-unicorn-obj.zip",
+   "bytes": 103824
+  },
+  "usdz": {
+   "name": "low-poly-unicorn.usdz",
+   "bytes": 356295
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "0.774 x 2.414 x 2.418",
+  "triangles": 3500,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28",
+  "derived_from": "unicorn",
+  "style": "low poly, flat shaded, palette texture"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Derived in Blender from the AI-assisted model \"unicorn\", whose base mesh and textures were generated with an AI image-to-3D tool (Meshy). This version was reduced to low poly and given a palette texture in Blender.",
+  "ai_content": true
+ }
+}

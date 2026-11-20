@@ -1,0 +1,51 @@
+{
+ "slug": "spinosaurus",
+ "triangles": 305458,
+ "texture_px": 4096,
+ "triangles_light": 152729,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "spinosaurus.glb",
+   "bytes": 15606804
+  },
+  "blend": {
+   "name": "spinosaurus.blend",
+   "bytes": 17884461
+  },
+  "fbx": {
+   "name": "spinosaurus.fbx",
+   "bytes": 23674428
+  },
+  "obj": {
+   "name": "spinosaurus-obj.zip",
+   "bytes": 13256199
+  },
+  "usdz": {
+   "name": "spinosaurus.usdz",
+   "bytes": 22116575
+  },
+  "glb_light": {
+   "name": "spinosaurus-light.glb",
+   "bytes": 5092856
+  },
+  "fbx_light": {
+   "name": "spinosaurus-light.fbx",
+   "bytes": 9882684
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "2.848 x 13.999 x 5.187",
+  "triangles": 305458,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-11-17"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

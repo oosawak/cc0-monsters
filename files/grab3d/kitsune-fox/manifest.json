@@ -1,0 +1,51 @@
+{
+ "slug": "kitsune-fox",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 400000,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "kitsune-fox.glb",
+   "bytes": 26619556
+  },
+  "blend": {
+   "name": "kitsune-fox.blend",
+   "bytes": 33832743
+  },
+  "fbx": {
+   "name": "kitsune-fox.fbx",
+   "bytes": 48133180
+  },
+  "obj": {
+   "name": "kitsune-fox-obj.zip",
+   "bytes": 19854082
+  },
+  "usdz": {
+   "name": "kitsune-fox.usdz",
+   "bytes": 42775008
+  },
+  "glb_light": {
+   "name": "kitsune-fox-light.glb",
+   "bytes": 12694796
+  },
+  "fbx_light": {
+   "name": "kitsune-fox-light.fbx",
+   "bytes": 25032652
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "1.600 x 1.027 x 1.250",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

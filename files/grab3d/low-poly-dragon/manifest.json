@@ -1,0 +1,45 @@
+{
+ "slug": "low-poly-dragon",
+ "triangles": 5976,
+ "texture_px": 24,
+ "triangles_light": null,
+ "texture_px_light": null,
+ "files": {
+  "glb": {
+   "name": "low-poly-dragon.glb",
+   "bytes": 611532
+  },
+  "blend": {
+   "name": "low-poly-dragon.blend",
+   "bytes": 303521
+  },
+  "fbx": {
+   "name": "low-poly-dragon.fbx",
+   "bytes": 348236
+  },
+  "obj": {
+   "name": "low-poly-dragon-obj.zip",
+   "bytes": 176442
+  },
+  "usdz": {
+   "name": "low-poly-dragon.usdz",
+   "bytes": 605447
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "5.052 x 3.170 x 3.621",
+  "triangles": 6000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28",
+  "derived_from": "dragon",
+  "style": "low poly, flat shaded, palette texture"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Derived in Blender from the AI-assisted model \"dragon\", whose base mesh and textures were generated with an AI image-to-3D tool (Meshy). This version was reduced to low poly and given a palette texture in Blender.",
+  "ai_content": true
+ }
+}

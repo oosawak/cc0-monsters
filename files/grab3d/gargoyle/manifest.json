@@ -1,0 +1,47 @@
+{
+ "slug": "gargoyle",
+ "triangles": 11872,
+ "texture_px": 2048,
+ "triangles_light": null,
+ "texture_px_light": null,
+ "files": {
+  "glb": {
+   "name": "gargoyle.glb",
+   "bytes": 754528
+  },
+  "blend": {
+   "name": "gargoyle.blend",
+   "bytes": 832688
+  },
+  "fbx": {
+   "name": "gargoyle.fbx",
+   "bytes": 1585996
+  },
+  "obj": {
+   "name": "gargoyle-obj.zip",
+   "bytes": 769249
+  },
+  "usdz": {
+   "name": "gargoyle.usdz",
+   "bytes": 1254792
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "0.563 x 0.564 x 1.025",
+  "triangles": 11872,
+  "textures": "PBR 2048px: base color, roughness, metallic, normal (baked)",
+  "generator": "Created by grab3d",
+  "created": "2026-09-26",
+  "real_size": "cute gargoyle statue on a plinth, approx. 54 x 58 x 102 cm (plinth 42 cm high)",
+  "notes": "chubby, friendly gargoyle in warm stone sitting like a cat on a lilac-grey plinth: big round head, large warm glowing eyes (separate unbaked mesh 'gargoyle_eyes_glow') with dark pupils and glints, little smile with two tiny teeth, pointed ears, small curved horns, half-raised bat wings, tail with a heart tip around its paws; bat relief in a ring on the plinth front; moss; faces -Y",
+  "set": "Cozy Halloween Kit"
+ },
+ "origin": {
+  "method": "procedural",
+  "detail": "Built procedurally with Blender scripts. The scripts were written with the help of an AI coding assistant. No generative AI model produced the geometry or textures directly.",
+  "ai_content": false,
+  "ai_assisted_code": true
+ }
+}

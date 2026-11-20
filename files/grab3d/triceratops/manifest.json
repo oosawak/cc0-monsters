@@ -1,0 +1,51 @@
+{
+ "slug": "triceratops",
+ "triangles": 469058,
+ "texture_px": 4096,
+ "triangles_light": 234529,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "triceratops.glb",
+   "bytes": 20491272
+  },
+  "blend": {
+   "name": "triceratops.blend",
+   "bytes": 24304627
+  },
+  "fbx": {
+   "name": "triceratops.fbx",
+   "bytes": 32756364
+  },
+  "obj": {
+   "name": "triceratops-obj.zip",
+   "bytes": 16663598
+  },
+  "usdz": {
+   "name": "triceratops.usdz",
+   "bytes": 30178563
+  },
+  "glb_light": {
+   "name": "triceratops-light.glb",
+   "bytes": 7406572
+  },
+  "fbx_light": {
+   "name": "triceratops-light.fbx",
+   "bytes": 14472188
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "2.944 x 8.500 x 4.084",
+  "triangles": 469058,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-10-29"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

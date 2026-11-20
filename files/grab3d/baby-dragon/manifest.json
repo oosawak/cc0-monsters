@@ -1,0 +1,51 @@
+{
+ "slug": "baby-dragon",
+ "triangles": 800000,
+ "texture_px": 4096,
+ "triangles_light": 400000,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "baby-dragon.glb",
+   "bytes": 28932700
+  },
+  "blend": {
+   "name": "baby-dragon.blend",
+   "bytes": 35266053
+  },
+  "fbx": {
+   "name": "baby-dragon.fbx",
+   "bytes": 50366204
+  },
+  "obj": {
+   "name": "baby-dragon-obj.zip",
+   "bytes": 21949039
+  },
+  "usdz": {
+   "name": "baby-dragon.usdz",
+   "bytes": 44977662
+  },
+  "glb_light": {
+   "name": "baby-dragon-light.glb",
+   "bytes": 12731672
+  },
+  "fbx_light": {
+   "name": "baby-dragon-light.fbx",
+   "bytes": 25030412
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "0.550 x 0.418 x 0.466",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-10-27"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

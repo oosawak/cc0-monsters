@@ -1,0 +1,51 @@
+{
+ "slug": "mammoth",
+ "triangles": 799999,
+ "texture_px": 4096,
+ "triangles_light": 399998,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "mammoth.glb",
+   "bytes": 32136928
+  },
+  "blend": {
+   "name": "mammoth.blend",
+   "bytes": 37194966
+  },
+  "fbx": {
+   "name": "mammoth.fbx",
+   "bytes": 54014028
+  },
+  "obj": {
+   "name": "mammoth-obj.zip",
+   "bytes": 24925967
+  },
+  "usdz": {
+   "name": "mammoth.usdz",
+   "bytes": 47383988
+  },
+  "glb_light": {
+   "name": "mammoth-light.glb",
+   "bytes": 14580328
+  },
+  "fbx_light": {
+   "name": "mammoth-light.fbx",
+   "bytes": 28073004
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "2.590 x 5.999 x 3.669",
+  "triangles": 800000,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-10-29"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

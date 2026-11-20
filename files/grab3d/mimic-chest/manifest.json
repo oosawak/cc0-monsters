@@ -1,0 +1,47 @@
+{
+ "slug": "mimic-chest",
+ "triangles": 17756,
+ "texture_px": 2048,
+ "triangles_light": null,
+ "texture_px_light": null,
+ "files": {
+  "glb": {
+   "name": "mimic-chest.glb",
+   "bytes": 1632628
+  },
+  "blend": {
+   "name": "mimic-chest.blend",
+   "bytes": 1393781
+  },
+  "fbx": {
+   "name": "mimic-chest.fbx",
+   "bytes": 3136236
+  },
+  "obj": {
+   "name": "mimic-chest-obj.zip",
+   "bytes": 1699159
+  },
+  "usdz": {
+   "name": "mimic-chest.usdz",
+   "bytes": 2677371
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "0.828 x 0.610 x 0.869",
+  "triangles": 17756,
+  "textures": "PBR 2048px: base color, roughness, metallic, normal (baked)",
+  "generator": "Created by grab3d",
+  "created": "2026-09-26",
+  "real_size": "mimic chest, approx. 82 x 60 x 80 cm (lid resting 22 degrees open)",
+  "notes": "cute, friendly mimic: oak plank chest with gold bands on four round feet, red velvet mouth, round blunt teeth, pink tongue hanging over the front edge; the lid 'mimic-chest_lid' (with the big eyes and pink cheeks) is a separate object with its origin on the rear hinge edge: rotate around local X, +22 degrees closes the mouth, negative angles open it wider (up to about -60); front faces -Y; no text",
+  "set": "Cozy Fantasy Dungeon Kit"
+ },
+ "origin": {
+  "method": "procedural",
+  "detail": "Built procedurally with Blender scripts. The scripts were written with the help of an AI coding assistant. No generative AI model produced the geometry or textures directly.",
+  "ai_content": false,
+  "ai_assisted_code": true
+ }
+}

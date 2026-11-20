@@ -1,0 +1,51 @@
+{
+ "slug": "hydra",
+ "triangles": 799998,
+ "texture_px": 4096,
+ "triangles_light": 399998,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "hydra.glb",
+   "bytes": 30171032
+  },
+  "blend": {
+   "name": "hydra.blend",
+   "bytes": 36282862
+  },
+  "fbx": {
+   "name": "hydra.fbx",
+   "bytes": 51654364
+  },
+  "obj": {
+   "name": "hydra-obj.zip",
+   "bytes": 23559163
+  },
+  "usdz": {
+   "name": "hydra.usdz",
+   "bytes": 46263672
+  },
+  "glb_light": {
+   "name": "hydra-light.glb",
+   "bytes": 13068336
+  },
+  "fbx_light": {
+   "name": "hydra-light.fbx",
+   "bytes": 25566572
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "3.174 x 4.999 x 3.777",
+  "triangles": 799998,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-10-29"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

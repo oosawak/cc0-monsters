@@ -1,0 +1,51 @@
+{
+ "slug": "t-rex",
+ "triangles": 763112,
+ "texture_px": 4096,
+ "triangles_light": 381556,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "t-rex.glb",
+   "bytes": 28870476
+  },
+  "blend": {
+   "name": "t-rex.blend",
+   "bytes": 35738596
+  },
+  "fbx": {
+   "name": "t-rex.fbx",
+   "bytes": 49707980
+  },
+  "obj": {
+   "name": "t-rex-obj.zip",
+   "bytes": 22423645
+  },
+  "usdz": {
+   "name": "t-rex.usdz",
+   "bytes": 44488806
+  },
+  "glb_light": {
+   "name": "t-rex-light.glb",
+   "bytes": 11689076
+  },
+  "fbx_light": {
+   "name": "t-rex-light.fbx",
+   "bytes": 23050732
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "3.309 x 11.999 x 5.325",
+  "triangles": 763112,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

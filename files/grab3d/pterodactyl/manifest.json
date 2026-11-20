@@ -1,0 +1,51 @@
+{
+ "slug": "pterodactyl",
+ "triangles": 580692,
+ "texture_px": 4096,
+ "triangles_light": 290345,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "pterodactyl.glb",
+   "bytes": 23195484
+  },
+  "blend": {
+   "name": "pterodactyl.blend",
+   "bytes": 27585136
+  },
+  "fbx": {
+   "name": "pterodactyl.fbx",
+   "bytes": 38044236
+  },
+  "obj": {
+   "name": "pterodactyl-obj.zip",
+   "bytes": 18255371
+  },
+  "usdz": {
+   "name": "pterodactyl.usdz",
+   "bytes": 35066677
+  },
+  "glb_light": {
+   "name": "pterodactyl-light.glb",
+   "bytes": 9167048
+  },
+  "fbx_light": {
+   "name": "pterodactyl-light.fbx",
+   "bytes": 17909276
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "1.141 x 2.000 x 1.791",
+  "triangles": 580692,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-10-29"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}

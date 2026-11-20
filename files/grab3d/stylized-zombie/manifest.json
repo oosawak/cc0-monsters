@@ -1,0 +1,51 @@
+{
+ "slug": "stylized-zombie",
+ "triangles": 799999,
+ "texture_px": 4096,
+ "triangles_light": 399998,
+ "texture_px_light": 1024,
+ "files": {
+  "glb": {
+   "name": "stylized-zombie.glb",
+   "bytes": 28007824
+  },
+  "blend": {
+   "name": "stylized-zombie.blend",
+   "bytes": 34456277
+  },
+  "fbx": {
+   "name": "stylized-zombie.fbx",
+   "bytes": 48532812
+  },
+  "obj": {
+   "name": "stylized-zombie-obj.zip",
+   "bytes": 20380634
+  },
+  "usdz": {
+   "name": "stylized-zombie.usdz",
+   "bytes": 43860623
+  },
+  "glb_light": {
+   "name": "stylized-zombie-light.glb",
+   "bytes": 13095304
+  },
+  "fbx_light": {
+   "name": "stylized-zombie-light.fbx",
+   "bytes": 25622796
+  }
+ },
+ "extras": {
+  "license": "CC0-1.0",
+  "source": "grab3d.com",
+  "dimensions_m": "1.106 x 0.357 x 1.800",
+  "triangles": 799999,
+  "variant": "download",
+  "generator": "Created by grab3d",
+  "created": "2026-09-28"
+ },
+ "origin": {
+  "method": "ai-assisted",
+  "detail": "Base mesh and textures generated with an AI image-to-3D tool (Meshy), then cleaned up, scaled, textured and checked in Blender.",
+  "ai_content": true
+ }
+}
