@@ -33,9 +33,14 @@
   .badge.rig { background:#e6f6ee; border-color:#9fd8bb; color:var(--rig); font-weight:700; }
   .badge.anim { background:#f0eafd; border-color:#cdbcf5; color:var(--anim); font-weight:700; }
   .badge.cc0 { background:#eef4ff; border-color:#b9cdf5; color:var(--accent); font-weight:700; }
+  .badge.game { background:#fdeceb; border-color:#f2b1ab; color:#c22f24; font-weight:700; }
+  .badge.use { background:#fff4e0; border-color:#f0d29a; color:#96660a; font-weight:700; }
+  .badge.vrm { background:#fde7f3; border-color:#f3b3d3; color:#b02a72; font-weight:700; }
+  .chip.game.on { background:#c22f24; border-color:#c22f24; }
   .btns { display:flex; gap:6px; flex-wrap:wrap; margin-top:auto; }
   .btn { font-size:13px; border:1px solid var(--line); background:#fff; border-radius:8px; padding:7px 10px; cursor:pointer; text-decoration:none; color:var(--ink); }
   .btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .btn.vrm { background:#b02a72; border-color:#b02a72; color:#fff; font-weight:700; }
   dialog { border:none; border-radius:14px; padding:0; width:min(860px,94vw); }
   dialog::backdrop { background:rgba(10,15,25,.55); }
   .dlg-head { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid var(--line); }
@@ -62,13 +67,15 @@
     <button class="chip rig" id="rigOnly">リグ付きのみ</button>
     <button class="chip anim" id="animOnly">アニメ付きのみ</button>
     <button class="chip" id="hostedOnly">このサイトからDL可のみ</button>
+    <button class="chip game" id="gameOnly">ゲームで使えるのみ</button>
+    <button class="chip" id="vrmOnly">VRMありのみ</button>
   </div>
 </header>
 <div id="status"></div>
 <main id="grid"></main>
 <footer>
   全モデル <b>CC0</b>（出典ページでライセンス表示を確認済み）。クレジット表記は不要ですが、各カードの出典リンクを残してあります。<br>
-  「3Dで見る」は Grab3D のプレビュー用GLB（軽量版）を使います。ゲーム用にはカードのダウンロード（リグ版GLB／FBX、Blenderファイル等）を使ってください。<br>
+  「ゲーム登場」タグのモデルは右上の迎撃ゲームに出てきます。「ゲームで使える」タグはGLB形式でそのままゲーム等に読み込めるものです（OpenGameArt分はBlenderでGLB変換したものを収録）。「VRMあり」はヒューマノイド骨格だったものをVRM 0.xに変換したもので、そのままダウンロードできます。<br>
   OpenGameArt の一部（100MB超のファイル）は GitHub の制限のため元サイトへのリンクのみです。収集方法と検証結果は <a href="https://github.com/oosawak/cc0-monsters">リポジトリのREADME</a> にあります。
 </footer>
 
@@ -79,7 +86,7 @@
 </dialog>
 
 <script>
-let DATA=[], srcFilter='all', rigOnly=false, animOnly=false, hostedOnly=false;
+let DATA=[], srcFilter='all', rigOnly=false, animOnly=false, hostedOnly=false, gameOnly=false, vrmOnly=false;
 const grid=document.getElementById('grid'), statusEl=document.getElementById('status');
 function mb(n){ return n? (n/1048576).toFixed(1)+'MB' : ''; }
 function esc(s){ return (s||'').replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
@@ -90,16 +97,22 @@ function render(){
     if(rigOnly && !e.rigged) return false;
     if(animOnly && !e.animated) return false;
     if(hostedOnly && !e.downloads.some(d=>d.hosted)) return false;
+    if(gameOnly && !(e.game || e.view_glb)) return false;
+    if(vrmOnly && !e.vrm) return false;
     if(q && !(e.title+' '+e.slug+' '+(e.author||'')).toLowerCase().includes(q)) return false;
     return true;
   });
   statusEl.textContent=list.length+' 件';
   grid.innerHTML=list.map(e=>{
     const badges=['<span class="badge cc0">CC0</span>',
+      e.game?'<span class="badge game">ゲーム登場</span>':'',
+      (e.game || e.view_glb)?'<span class="badge use">ゲームで使える</span>':'',
+      e.vrm?'<span class="badge vrm">VRMあり</span>':'',
       e.rigged?'<span class="badge rig">リグ付き</span>':'',
       e.animated?'<span class="badge anim">アニメ付き</span>':'',
       e.source?('<span class="badge">'+esc(e.source)+'</span>'):''].join('');
-    const dl=e.downloads.map(d=>'<a class="btn'+(d.hosted?' primary':'')+'" href="'+esc(d.url)+'" '+(d.hosted?'download':'target="_blank" rel="noopener"')+'>'+esc(d.label)+(d.bytes?' '+mb(d.bytes):'')+'</a>').join('');
+    const vrmBtn=e.vrm?'<a class="btn vrm" href="'+esc(e.vrm)+'" download>VRMダウンロード</a>':'';
+    const dl=vrmBtn+e.downloads.filter(d=>!e.vrm || d.url!==e.vrm).map(d=>'<a class="btn'+(d.hosted?' primary':'')+'" href="'+esc(d.url)+'" '+(d.hosted?'download':'target="_blank" rel="noopener"')+'>'+esc(d.label)+(d.bytes?' '+mb(d.bytes):'')+'</a>').join('');
     const view=e.view_glb?'<button class="btn" data-view="'+esc(e.view_glb)+'" data-title="'+esc(e.title)+'" data-anims="'+esc((e.anims||[]).join(', '))+'">3Dで見る</button>':'';
     return '<article class="card"><div class="imgwrap">'+(e.thumb?'<img loading="lazy" src="'+esc(e.thumb)+'" alt="">':'<div class="noimg">'+esc(e.title)+'</div>')+'</div>'
       +'<div class="body"><div class="title">'+esc(e.title)+'</div><div class="badges">'+badges+'</div>'
@@ -118,7 +131,7 @@ document.getElementById('q').addEventListener('input',render);
 document.querySelectorAll('.chip.src').forEach(c=>c.addEventListener('click',()=>{
   document.querySelectorAll('.chip.src').forEach(x=>x.classList.remove('on')); c.classList.add('on'); srcFilter=c.dataset.src; render();
 }));
-for(const [id,fn] of [['rigOnly',v=>rigOnly=v],['animOnly',v=>animOnly=v],['hostedOnly',v=>hostedOnly=v]]){
+for(const [id,fn] of [['rigOnly',v=>rigOnly=v],['animOnly',v=>animOnly=v],['hostedOnly',v=>hostedOnly=v],['gameOnly',v=>gameOnly=v],['vrmOnly',v=>vrmOnly=v]]){
   document.getElementById(id).addEventListener('click',ev=>{ const on=!ev.target.classList.contains('on'); ev.target.classList.toggle('on',on); fn(on); render(); });
 }
 fetch('catalog.json').then(r=>r.json()).then(d=>{

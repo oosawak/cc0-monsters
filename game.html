@@ -2,29 +2,24 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>モンスター迎撃ゲーム | CC0モンスター・動物 3Dモデル集</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>迎撃ゲーム | CC0モンスター置き場</title>
 <style>
-  * { box-sizing:border-box; margin:0; }
-  html,body { height:100%; overflow:hidden; background:#0b1020; font-family:system-ui,"Hiragino Kaku Gothic ProN",sans-serif; color:#eef2f8; }
-  #app { position:fixed; inset:0; }
-  canvas { display:block; }
-  .hud { position:fixed; top:0; left:0; right:0; display:flex; gap:14px; align-items:center; padding:10px 14px; pointer-events:none; z-index:5; }
-  .hud .box { background:rgba(10,16,30,.72); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:6px 12px; font-size:15px; }
-  .hud b { font-size:18px; }
-  .hud .spacer { flex:1; }
-  .hud a { pointer-events:auto; color:#cfe1ff; text-decoration:none; background:rgba(10,16,30,.72); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:8px 12px; font-size:14px; }
-  #fireBtn { position:fixed; right:18px; bottom:22px; width:96px; height:96px; border-radius:50%; border:2px solid rgba(255,255,255,.35); background:rgba(200,50,40,.75); color:#fff; font-size:19px; font-weight:700; z-index:6; touch-action:none; }
-  #fireBtn:active { background:rgba(230,70,55,.95); }
-  .overlay { position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; background:rgba(6,10,22,.68); z-index:10; text-align:center; padding:20px; }
-  .overlay h1 { font-size:30px; }
-  .overlay p { line-height:1.7; color:#c8d4e6; max-width:560px; }
-  .bigbtn { font-size:18px; font-weight:700; padding:14px 34px; border-radius:12px; border:none; background:#2563eb; color:#fff; cursor:pointer; }
-  .bigbtn:disabled { background:#44506a; cursor:wait; }
-  #loadbar { width:min(420px,80vw); height:10px; background:#26314a; border-radius:99px; overflow:hidden; }
-  #loadfill { height:100%; width:0%; background:#4f8cff; transition:width .2s; }
-  .hidden { display:none !important; }
-  #toast { position:fixed; left:50%; bottom:130px; transform:translateX(-50%); font-size:22px; font-weight:700; color:#ffd76a; text-shadow:0 2px 8px #000; z-index:5; pointer-events:none; }
+  html,body{margin:0;height:100%;overflow:hidden;background:#0b1020;font-family:system-ui,"Hiragino Sans","Noto Sans JP",sans-serif}
+  #app{position:fixed;inset:0}
+  canvas{display:block}
+  .hud{position:fixed;top:0;left:0;right:0;display:flex;gap:16px;align-items:center;padding:10px 14px;color:#fff;pointer-events:none;z-index:5;flex-wrap:wrap}
+  .hud .box{background:rgba(10,14,28,.65);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:6px 12px;font-size:15px}
+  .hud b{font-size:19px}
+  #msg{position:fixed;inset:0;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;color:#fff;text-align:center;z-index:6;background:rgba(5,8,18,.45);padding:20px}
+  #msg h1{font-size:clamp(24px,5vw,42px);margin:0}
+  #msg p{max-width:560px;line-height:1.7;margin:0;color:#dbe4ff}
+  .btn{pointer-events:auto;background:#e0452c;color:#fff;border:none;border-radius:999px;padding:13px 30px;font-size:17px;font-weight:700;cursor:pointer}
+  .btn:disabled{opacity:.45;cursor:wait}
+  #fire{position:fixed;right:18px;bottom:18px;z-index:5;width:92px;height:92px;border-radius:50%;border:2px solid rgba(255,255,255,.35);background:rgba(224,69,44,.85);color:#fff;font-size:17px;font-weight:700;display:none;touch-action:none}
+  #cross{position:fixed;z-index:4;width:34px;height:34px;margin:-17px 0 0 -17px;pointer-events:none;color:#ffd34d;font-size:30px;line-height:34px;text-align:center;text-shadow:0 0 6px #000}
+  a.back{position:fixed;left:14px;bottom:14px;z-index:5;color:#cdd8ff;background:rgba(10,14,28,.65);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:8px 14px;text-decoration:none;font-size:14px}
+  @media (pointer:coarse){ #fire{display:block} }
 </style>
 <script type="importmap">
 { "imports": {
@@ -38,328 +33,359 @@
 <div class="hud">
   <div class="box">スコア <b id="score">0</b></div>
   <div class="box">ウェーブ <b id="wave">1</b></div>
-  <div class="box">拠点 <b id="base">10</b></div>
-  <div class="spacer"></div>
-  <a href="./">← モデル集に戻る</a>
+  <div class="box">拠点HP <b id="hp">10</b></div>
+  <div class="box" id="loadbox">読み込み中…</div>
 </div>
-<div id="toast"></div>
-<button id="fireBtn">撃つ</button>
-
-<div class="overlay" id="startScr">
+<div id="cross">＋</div>
+<button id="fire">撃つ</button>
+<a class="back" href="./">← 一覧へもどる</a>
+<div id="msg">
   <h1>モンスター迎撃ゲーム</h1>
-  <p>CC0のモンスターたちが攻めてきます。大砲で迎え撃ってください。<br>
-  狙い: マウス移動／ドラッグ　発射: クリック長押し・スペース・「撃つ」ボタン<br>
-  モデル読み込みに約75MB使います（Wi-Fi推奨）。全部このサイト収録のCC0モデルです。</p>
-  <div id="loadbar"><div id="loadfill"></div></div>
-  <p id="loadmsg">読み込み中…</p>
-  <button class="bigbtn" id="startBtn" disabled>スタート</button>
-</div>
-
-<div class="overlay hidden" id="overScr">
-  <h1>拠点が落ちました</h1>
-  <p id="finalScore"></p>
-  <button class="bigbtn" id="retryBtn">もう一度</button>
+  <p>CC0モンスターたちが攻めてきます。マウス（ドラッグ）で狙って、クリック長押しで連射。スマホは右下の「撃つ」ボタンです。拠点HPが0になるとゲームオーバー。</p>
+  <p id="loadmsg">モデルを読み込んでいます…</p>
+  <button class="btn" id="start" disabled>読み込み中…</button>
 </div>
 
 <script type="module">
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import * as SkeletonUtils from 'three/addons/utils/SkeletonUtils.js';
+import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+import { clone as skeletonClone } from 'three/addons/utils/SkeletonUtils.js';
 
-const ROSTER = [
-  // rigged (walk/runアニメ付き)
-  { slug:'werewolf',        url:'files/grab3d/werewolf/rigged/werewolf-rigged.glb',                 rigged:true,  hp:4, height:3.4, score:150 },
-  { slug:'yeti',            url:'files/grab3d/yeti/rigged/yeti-rigged.glb',                         rigged:true,  hp:4, height:3.4, score:150 },
-  { slug:'stone-golem',     url:'files/grab3d/stone-golem/rigged/stone-golem-rigged.glb',           rigged:true,  hp:6, height:3.8, score:200 },
-  { slug:'stylized-zombie', url:'files/grab3d/stylized-zombie/rigged/stylized-zombie-rigged.glb',   rigged:true,  hp:3, height:3.2, score:120 },
-  // static (プレビューGLB、手続きアニメで動かす)
-  { slug:'crystal-dragon',  url:'files/grab3d/crystal-dragon/preview.glb',  rigged:false, hp:3, height:3.6, score:120 },
-  { slug:'horror-monster',  url:'files/grab3d/horror-monster/preview.glb',  rigged:false, hp:3, height:3.4, score:120 },
-  { slug:'hydra',           url:'files/grab3d/hydra/preview.glb',           rigged:false, hp:4, height:3.8, score:150 },
-  { slug:'kraken',          url:'files/grab3d/kraken/preview.glb',          rigged:false, hp:4, height:3.6, score:150 },
-  { slug:'griffin',         url:'files/grab3d/griffin/preview.glb',         rigged:false, hp:2, height:3.0, score:100 },
-  { slug:'phoenix',         url:'files/grab3d/phoenix/preview.glb',         rigged:false, hp:2, height:3.0, score:100, fly:true },
-  { slug:'t-rex',           url:'files/grab3d/t-rex/preview.glb',           rigged:false, hp:4, height:3.8, score:150 },
-  { slug:'low-poly-dragon', url:'files/grab3d/low-poly-dragon/low-poly-dragon.glb', rigged:false, hp:1, height:2.2, score:60, fly:true },
-  { slug:'gargoyle',        url:'files/grab3d/gargoyle/gargoyle.glb',       rigged:false, hp:2, height:2.6, score:80 },
-  { slug:'mimic-chest',     url:'files/grab3d/mimic-chest/mimic-chest.glb', rigged:false, hp:1, height:1.6, score:60 },
+// フォールバック（game_roster.json が読めないときの最小ロスター）
+const FALLBACK = [
+  { url:'files/grab3d/werewolf/rigged/werewolf-rigged.glb', rigged:true, fly:false, h:3.4, hp:3, score:250 },
+  { url:'files/grab3d/yeti/rigged/yeti-rigged.glb', rigged:true, fly:false, h:3.4, hp:3, score:250 },
+  { url:'files/grab3d/stone-golem/rigged/stone-golem-rigged.glb', rigged:true, fly:false, h:3.6, hp:4, score:300 },
+  { url:'files/grab3d/stylized-zombie/rigged/stylized-zombie-rigged.glb', rigged:true, fly:false, h:3.2, hp:2, score:200 },
+  { url:'files/grab3d/crystal-dragon/preview.glb', rigged:false, fly:true, h:3.2, hp:3, score:250 },
+  { url:'files/grab3d/phoenix/preview.glb', rigged:false, fly:true, h:2.6, hp:2, score:200 },
+  { url:'files/grab3d/low-poly-dragon/low-poly-dragon.glb', rigged:false, fly:true, h:2.4, hp:2, score:200 },
+  { url:'files/grab3d/hydra/preview.glb', rigged:false, fly:false, h:3.4, hp:3, score:250 },
+  { url:'files/grab3d/t-rex/preview.glb', rigged:false, fly:false, h:3.4, hp:3, score:250 },
+  { url:'files/grab3d/mimic-chest/mimic-chest.glb', rigged:false, fly:false, h:2.0, hp:1, score:150 },
 ];
 
 const app = document.getElementById('app');
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x87a6c8);
-scene.fog = new THREE.Fog(0x87a6c8, 55, 130);
-const camera = new THREE.PerspectiveCamera(58, innerWidth/innerHeight, 0.1, 300);
-camera.position.set(0, 8.5, 26);
-camera.lookAt(0, 2.5, -20);
 const renderer = new THREE.WebGLRenderer({ antialias:true });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
-renderer.shadowMap.enabled = true;
 app.appendChild(renderer.domElement);
 
-scene.add(new THREE.HemisphereLight(0xdfeaff, 0x445533, 1.15));
-const sun = new THREE.DirectionalLight(0xffffff, 2.0);
-sun.position.set(18, 30, 12); sun.castShadow = true;
-sun.shadow.camera.left=-40; sun.shadow.camera.right=40; sun.shadow.camera.top=40; sun.shadow.camera.bottom=-40;
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b1020);
+scene.fog = new THREE.Fog(0x0b1020, 55, 130);
+const camera = new THREE.PerspectiveCamera(58, innerWidth/innerHeight, 0.1, 300);
+camera.position.set(0, 8.5, 26);
+camera.lookAt(0, 3, -20);
+
+scene.add(new THREE.HemisphereLight(0xbcd2ff, 0x2a2118, 1.1));
+const sun = new THREE.DirectionalLight(0xffffff, 2.2);
+sun.position.set(14, 26, 10);
 scene.add(sun);
 
-const ground = new THREE.Mesh(new THREE.PlaneGeometry(90, 130), new THREE.MeshStandardMaterial({ color:0x5d7d4a, roughness:1 }));
-ground.rotation.x = -Math.PI/2; ground.position.z = -38; ground.receiveShadow = true;
+const ground = new THREE.Mesh(
+  new THREE.PlaneGeometry(300, 220),
+  new THREE.MeshStandardMaterial({ color:0x1d2b1d, roughness:1 })
+);
+ground.rotation.x = -Math.PI/2;
+ground.position.z = -60;
 scene.add(ground);
-const lane = new THREE.Mesh(new THREE.PlaneGeometry(40, 130), new THREE.MeshStandardMaterial({ color:0x77694f, roughness:1 }));
-lane.rotation.x = -Math.PI/2; lane.position.set(0, 0.01, -38); lane.receiveShadow = true;
-scene.add(lane);
-// 拠点ライン
-const wall = new THREE.Mesh(new THREE.BoxGeometry(42, 1.6, 1.2), new THREE.MeshStandardMaterial({ color:0x8a8f98, roughness:.8 }));
-wall.position.set(0, 0.8, 11); wall.castShadow = true; scene.add(wall);
+const road = new THREE.Mesh(
+  new THREE.PlaneGeometry(17, 220),
+  new THREE.MeshStandardMaterial({ color:0x3a3f4a, roughness:1 })
+);
+road.rotation.x = -Math.PI/2;
+road.position.set(0, 0.01, -60);
+scene.add(road);
 
-// ---- 大砲 ----
+// 大砲
 const cannon = new THREE.Group();
-const cbase = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.9, 1.0, 20), new THREE.MeshStandardMaterial({ color:0x39404d, roughness:.6, metalness:.4 }));
-cbase.position.y = 0.5; cbase.castShadow = true; cannon.add(cbase);
-const pivot = new THREE.Group(); pivot.position.y = 1.15; cannon.add(pivot);
-const barrel = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.55, 3.6, 16), new THREE.MeshStandardMaterial({ color:0x22262e, roughness:.45, metalness:.6 }));
-barrel.rotation.x = Math.PI/2; barrel.position.z = -1.5; barrel.castShadow = true; pivot.add(barrel);
-const muzzleTip = new THREE.Object3D(); muzzleTip.position.set(0, 0, -3.4); pivot.add(muzzleTip);
+const base = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.9, 1.0, 20), new THREE.MeshStandardMaterial({ color:0x555f73, roughness:.6, metalness:.4 }));
+base.position.y = 0.5;
+cannon.add(base);
+const barrelPivot = new THREE.Group();
+barrelPivot.position.set(0, 1.15, 0);
+const barrel = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.44, 3.4, 16), new THREE.MeshStandardMaterial({ color:0x39415a, roughness:.4, metalness:.6 }));
+barrel.rotation.x = Math.PI/2;
+barrel.position.z = 1.2;
+barrelPivot.add(barrel);
+cannon.add(barrelPivot);
 cannon.position.set(0, 0, 15.5);
 scene.add(cannon);
+const muzzle = new THREE.Object3D();
+muzzle.position.set(0, 0, 3.1);
+barrelPivot.add(muzzle);
 
-// ---- 音（簡易シンセ） ----
+// 音（簡易シンセ）
 let AC = null;
-function beep(freq, dur, type='square', vol=0.12, slide=0){
+function beep(freq, dur, type='square', vol=0.12){
   try{
     AC = AC || new (window.AudioContext||window.webkitAudioContext)();
     const o = AC.createOscillator(), g = AC.createGain();
     o.type = type; o.frequency.value = freq;
-    if(slide) o.frequency.exponentialRampToValueAtTime(Math.max(30, freq+slide), AC.currentTime+dur);
     g.gain.setValueAtTime(vol, AC.currentTime);
-    g.gain.exponentialRampToValueAtTime(0.001, AC.currentTime+dur);
-    o.connect(g).connect(AC.destination); o.start(); o.stop(AC.currentTime+dur);
+    g.gain.exponentialRampToValueAtTime(0.001, AC.currentTime + dur);
+    o.connect(g).connect(AC.destination);
+    o.start(); o.stop(AC.currentTime + dur);
   }catch(e){}
 }
 
-// ---- モデル読み込み ----
-const loader = new GLTFLoader();
-const templates = [];
-let loadedCount = 0;
-async function loadAll(){
-  for(const r of ROSTER){
-    try{
-      const g = await loader.loadAsync(r.url);
-      templates.push({ ...r, scene:g.scene, animations:g.animations });
-    }catch(e){ console.warn('load failed', r.slug, e); }
-    loadedCount++;
-    document.getElementById('loadfill').style.width = (loadedCount/ROSTER.length*100)+'%';
-    document.getElementById('loadmsg').textContent = `読み込み中… ${loadedCount}/${ROSTER.length}`;
+// ロスター読み込み
+const gltfLoader = new GLTFLoader();
+const fbxLoader = new FBXLoader();
+const pool = [];
+let loadTotal = 0, loadDone = 0;
+
+async function loadSpec(spec){
+  try{
+    let obj, anims = [];
+    if (spec.url.toLowerCase().endsWith('.fbx')){
+      obj = await fbxLoader.loadAsync(spec.url);
+      anims = obj.animations || [];
+    } else {
+      const g = await gltfLoader.loadAsync(spec.url);
+      obj = g.scene; anims = g.animations || [];
+    }
+    const box = new THREE.Box3().setFromObject(obj);
+    const size = box.getSize(new THREE.Vector3());
+    if (!isFinite(size.x) || size.length() === 0) throw new Error('empty');
+    pool.push({ spec, proto: obj, anims, size, boxMin: box.min.clone() });
+  }catch(e){ /* 読めないモデルは出撃させない */ }
+  loadDone++;
+  const lb = document.getElementById('loadbox');
+  if (lb) lb.textContent = '登場モデル ' + pool.length + ' 種（読込 ' + loadDone + '/' + loadTotal + '）';
+  const st = document.getElementById('start');
+  if (pool.length >= 6 && st.disabled){
+    st.disabled = false; st.textContent = 'ゲーム開始';
+    document.getElementById('loadmsg').textContent = '準備できました。読み込みは裏で続きます（登場モデルは増えていきます）。';
   }
-  document.getElementById('loadmsg').textContent = '準備完了';
-  document.getElementById('startBtn').disabled = false;
+  if (loadDone >= loadTotal && lb) lb.textContent = '登場モデル ' + pool.length + ' 種';
 }
-loadAll();
 
-// ---- ゲーム状態 ----
-let playing=false, score=0, wave=1, baseHp=10, elapsed=0, spawnTimer=0, kills=0;
-const monsters=[], balls=[], shards=[];
-const ballGeo = new THREE.SphereGeometry(0.34, 12, 10);
-const ballMat = new THREE.MeshStandardMaterial({ color:0x1c1e24, roughness:.4, metalness:.5 });
-const shardGeo = new THREE.TetrahedronGeometry(0.22);
-
-function toast(txt){
-  const t=document.getElementById('toast'); t.textContent=txt;
-  t.style.opacity=1; setTimeout(()=>t.style.opacity=0, 700);
+async function loadRoster(){
+  let roster = FALLBACK;
+  try{
+    const r = await fetch('game_roster.json');
+    if (r.ok){ const j = await r.json(); if (Array.isArray(j) && j.length) roster = j; }
+  }catch(e){}
+  loadTotal = roster.length;
+  let idx = 0;
+  async function worker(){
+    while (idx < roster.length){ const s = roster[idx++]; await loadSpec(s); }
+  }
+  await Promise.all([worker(), worker(), worker(), worker()]);
 }
+
+// ゲーム状態
+let playing = false, score = 0, hp = 10, wave = 1, waveT = 0, spawnT = 0, cool = 0;
+const monsters = [], balls = [], parts = [];
+const ballGeo = new THREE.SphereGeometry(0.22, 10, 10);
+const ballMat = new THREE.MeshBasicMaterial({ color:0xffd34d });
+const partGeo = new THREE.BoxGeometry(0.16, 0.16, 0.16);
+
 function spawnMonster(){
-  if(!templates.length) return;
-  const tpl = templates[Math.floor(Math.random()*templates.length)];
-  let obj, mixer=null;
-  if(tpl.rigged){
-    obj = SkeletonUtils.clone(tpl.scene);
-    mixer = new THREE.AnimationMixer(obj);
-    const clip = tpl.animations.find(a=>a.name==='walk') || tpl.animations[0];
-    if(clip){ const act = mixer.clipAction(clip); act.play(); }
-  } else {
-    obj = tpl.scene.clone(true);
-  }
-  // 正規化: 高さを tpl.height に合わせ、足元を y=0 に
-  const box = new THREE.Box3().setFromObject(obj);
-  const size = new THREE.Vector3(); box.getSize(size);
-  const s = tpl.height / Math.max(size.y, 0.001);
+  if (!pool.length) return;
+  const p = pool[Math.floor(Math.random()*pool.length)];
+  const spec = p.spec;
+  const obj = spec.rigged ? skeletonClone(p.proto) : p.proto.clone(true);
+  const s = spec.h / p.size.y;
   obj.scale.setScalar(s);
-  const box2 = new THREE.Box3().setFromObject(obj);
-  obj.position.y -= box2.min.y;
+  obj.position.y -= p.boxMin.y * s;
   const group = new THREE.Group();
   group.add(obj);
-  const flyY = tpl.fly ? 2.2 + Math.random()*1.2 : 0;
-  group.position.set((Math.random()*2-1)*15, flyY, -88 - Math.random()*10);
-  group.rotation.y = 0; // glTFの正面は+Z（進行方向）
-  obj.traverse(o=>{ if(o.isMesh){ o.castShadow=true; } });
+  const w = p.size.x * s, d = p.size.z * s;
+  const proxy = new THREE.Mesh(new THREE.BoxGeometry(Math.max(w,0.8)+0.5, spec.h+0.5, Math.max(d,0.8)+0.5),
+                               new THREE.MeshBasicMaterial({ visible:false }));
+  proxy.position.y = spec.h/2;
+  group.add(proxy);
+  const lane = (Math.random()*14 - 7);
+  group.position.set(lane, spec.fly ? 2.1 + Math.random()*1.4 : 0, -78 - Math.random()*22);
+  if (spec.rotY) group.rotation.y = spec.rotY;
+  group.userData.baseRotY = spec.rotY || 0;
   scene.add(group);
-  const speedBase = tpl.rigged ? 2.6 : 2.1;
-  monsters.push({ group, obj, mixer, tpl, hp:tpl.hp, flyY,
-    speed:(speedBase + Math.random()*1.1) * (1 + (wave-1)*0.07),
-    phase:Math.random()*Math.PI*2, dead:0, radius:tpl.height*0.42 });
-  if(mixer) mixer.timeScale = 1;
+  let mixer = null;
+  if (p.anims && p.anims.length){
+    mixer = new THREE.AnimationMixer(obj);
+    const walk = p.anims.find(a => /walk/i.test(a.name)) || p.anims[0];
+    mixer.clipAction(walk).play();
+  }
+  const m = { group, proxy, mixer, hp: spec.hp + Math.floor((wave-1)/2),
+              speed: (2.1 + Math.random()*0.9 + wave*0.22) * (spec.fly ? 1.25 : 1),
+              h: spec.h, hx: Math.max(w,0.8)/2 + 0.3, hz: Math.max(d,0.8)/2 + 0.3,
+              fly: spec.fly, score: spec.score, t: Math.random()*10, baseY: group.position.y };
+  proxy.userData.monster = m;
+  monsters.push(m);
 }
-function burst(pos, color, n=14, power=5){
-  for(let i=0;i<n;i++){
-    const m = new THREE.Mesh(shardGeo, new THREE.MeshStandardMaterial({ color, roughness:.7 }));
-    m.position.copy(pos);
-    m.userData.v = new THREE.Vector3((Math.random()-0.5)*power, Math.random()*power*0.9+1.5, (Math.random()-0.5)*power);
-    m.userData.life = 0.8 + Math.random()*0.4;
-    scene.add(m); shards.push(m);
+
+const raycaster = new THREE.Raycaster();
+const pointerNDC = new THREE.Vector2(0, 0.1);
+const aimPoint = new THREE.Vector3(0, 2.5, -30);
+let firing = false;
+
+function updateAim(){
+  raycaster.setFromCamera(pointerNDC, camera);
+  const proxies = [];
+  for (const m of monsters) proxies.push(m.proxy);
+  let hit = null;
+  if (proxies.length) hit = raycaster.intersectObjects(proxies, false)[0];
+  if (hit) aimPoint.copy(hit.point);
+  else raycaster.ray.at(90, aimPoint);
+  barrelPivot.lookAt(aimPoint);
+  const cross = document.getElementById('cross');
+  cross.style.left = ((pointerNDC.x+1)/2*innerWidth) + 'px';
+  cross.style.top = ((-pointerNDC.y+1)/2*innerHeight) + 'px';
+}
+
+function setPointer(e){
+  const x = e.touches ? e.touches[0].clientX : e.clientX;
+  const y = e.touches ? e.touches[0].clientY : e.clientY;
+  pointerNDC.x = (x/innerWidth)*2 - 1;
+  pointerNDC.y = -(y/innerHeight)*2 + 1;
+}
+addEventListener('pointermove', setPointer);
+addEventListener('pointerdown', e => { setPointer(e); if (playing && e.target === renderer.domElement) firing = true; });
+addEventListener('pointerup', () => firing = false);
+addEventListener('keydown', e => { if (e.code === 'Space'){ firing = true; e.preventDefault(); } });
+addEventListener('keyup', e => { if (e.code === 'Space') firing = false; });
+const fireBtn = document.getElementById('fire');
+fireBtn.addEventListener('pointerdown', e => { firing = true; e.preventDefault(); });
+fireBtn.addEventListener('pointerup', () => firing = false);
+fireBtn.addEventListener('pointerleave', () => firing = false);
+
+function shoot(){
+  const mp = new THREE.Vector3();
+  muzzle.getWorldPosition(mp);
+  const dir = aimPoint.clone().sub(mp).normalize();
+  const b = new THREE.Mesh(ballGeo, ballMat);
+  b.position.copy(mp);
+  b.userData.vel = dir.multiplyScalar(85);
+  b.userData.life = 2.2;
+  b.userData.prev = mp.clone();
+  scene.add(b);
+  balls.push(b);
+  beep(160, 0.08, 'square', 0.07);
+}
+
+function burst(pos, color){
+  for (let i = 0; i < 14; i++){
+    const p = new THREE.Mesh(partGeo, new THREE.MeshBasicMaterial({ color }));
+    p.position.copy(pos);
+    p.userData.vel = new THREE.Vector3((Math.random()-0.5)*9, Math.random()*8, (Math.random()-0.5)*9);
+    p.userData.life = 0.7;
+    scene.add(p);
+    parts.push(p);
   }
 }
-let firing=false, cooldown=0;
-const raycaster = new THREE.Raycaster();
-const pointer = new THREE.Vector2(0, 0.1);
-const aimPlane = new THREE.Plane(new THREE.Vector3(0,0,1), 30); // z=-30 の面
-const aimPoint = new THREE.Vector3(0, 2, -30);
-const _m = new THREE.Matrix4();
-function updateAim(){
-  raycaster.setFromCamera(pointer, camera);
-  const p = new THREE.Vector3();
-  if(raycaster.ray.intersectPlane(aimPlane, p)) aimPoint.copy(p);
-  // 砲身は pivot の -Z 方向。Matrix4.lookAt(eye=砲, target=狙点) は +Z を狙点の反対へ向けるので、-Z が狙点を向く
-  const from = pivot.getWorldPosition(new THREE.Vector3());
-  _m.lookAt(from, aimPoint, new THREE.Vector3(0,1,0));
-  pivot.quaternion.setFromRotationMatrix(_m);
-}
-function shoot(){
-  if(cooldown>0 || !playing) return;
-  cooldown = 0.32;
-  const ball = new THREE.Mesh(ballGeo, ballMat);
-  const from = muzzleTip.getWorldPosition(new THREE.Vector3());
-  ball.position.copy(from);
-  const dir = aimPoint.clone().sub(from).normalize();
-  ball.userData.v = dir.multiplyScalar(78);
-  scene.add(ball); balls.push(ball);
-  beep(140, 0.18, 'square', 0.15, -80);
-}
-addEventListener('pointermove', e=>{
-  pointer.x = (e.clientX/innerWidth)*2-1;
-  pointer.y = -(e.clientY/innerHeight)*2+1;
-});
-addEventListener('pointerdown', e=>{ if(playing && e.target.id!=='fireBtn'){ firing=true; shoot(); } });
-addEventListener('pointerup', ()=> firing=false);
-addEventListener('keydown', e=>{ if(e.code==='Space'){ firing=true; shoot(); e.preventDefault(); } });
-addEventListener('keyup', e=>{ if(e.code==='Space') firing=false; });
-const fireBtn = document.getElementById('fireBtn');
-fireBtn.addEventListener('pointerdown', e=>{ firing=true; shoot(); e.preventDefault(); });
-fireBtn.addEventListener('pointerup', ()=> firing=false);
-fireBtn.addEventListener('pointerleave', ()=> firing=false);
 
-function resetGame(){
-  for(const m of monsters){ scene.remove(m.group); }
-  for(const b of balls){ scene.remove(b); }
-  for(const s of shards){ scene.remove(s); }
-  monsters.length=0; balls.length=0; shards.length=0;
-  score=0; wave=1; baseHp=10; elapsed=0; spawnTimer=0; kills=0; cooldown=0;
-  syncHud();
+function damage(m){
+  m.hp--;
+  burst(new THREE.Vector3(m.group.position.x, m.group.position.y + m.h*0.6, m.group.position.z), 0xffa53d);
+  beep(320, 0.06, 'triangle', 0.09);
+  if (m.hp <= 0){
+    score += m.score;
+    document.getElementById('score').textContent = score;
+    burst(m.group.position.clone().setY(m.group.position.y + m.h*0.5), 0x7dff6a);
+    beep(90, 0.25, 'sawtooth', 0.12);
+    scene.remove(m.group);
+    monsters.splice(monsters.indexOf(m), 1);
+  }
 }
-function syncHud(){
-  document.getElementById('score').textContent = score;
-  document.getElementById('wave').textContent = wave;
-  document.getElementById('base').textContent = baseHp;
-}
+
 function gameOver(){
-  playing=false;
-  document.getElementById('finalScore').textContent = `スコア ${score}（${kills}体撃破・ウェーブ${wave}まで）`;
-  document.getElementById('overScr').classList.remove('hidden');
+  playing = false;
+  const msg = document.getElementById('msg');
+  msg.style.display = 'flex';
+  msg.querySelector('h1').textContent = 'ゲームオーバー';
+  document.getElementById('loadmsg').textContent = 'スコア ' + score + '（ウェーブ ' + wave + ' まで）';
+  const st = document.getElementById('start');
+  st.disabled = false; st.textContent = 'もう一度遊ぶ';
 }
-document.getElementById('startBtn').addEventListener('click', ()=>{
-  document.getElementById('startScr').classList.add('hidden');
-  resetGame(); playing=true; beep(520,0.12,'triangle',0.1);
-});
-document.getElementById('retryBtn').addEventListener('click', ()=>{
-  document.getElementById('overScr').classList.add('hidden');
-  resetGame(); playing=true;
+
+document.getElementById('start').addEventListener('click', () => {
+  document.getElementById('msg').style.display = 'none';
+  for (const m of monsters) scene.remove(m.group);
+  monsters.length = 0;
+  score = 0; hp = 10; wave = 1; waveT = 0; spawnT = 0;
+  document.getElementById('score').textContent = '0';
+  document.getElementById('wave').textContent = '1';
+  document.getElementById('hp').textContent = '10';
+  playing = true;
+  beep(520, 0.1, 'square', 0.08);
 });
 
 const clock = new THREE.Clock();
-function animate(){
-  requestAnimationFrame(animate);
+function loop(){
+  requestAnimationFrame(loop);
   const dt = Math.min(clock.getDelta(), 0.05);
-  const t = clock.elapsedTime;
-  if(playing){
-    elapsed += dt;
-    wave = 1 + Math.floor(elapsed/25);
-    cooldown -= dt;
-    if(firing) shoot();
-    spawnTimer -= dt;
-    const interval = Math.max(0.9, 2.6 - wave*0.22);
-    if(spawnTimer<=0 && monsters.filter(m=>!m.dead).length < 11){ spawnMonster(); spawnTimer = interval * (0.7+Math.random()*0.6); }
-    // モンスター移動
-    for(let i=monsters.length-1;i>=0;i--){
-      const m = monsters[i];
-      if(m.dead){
-        m.dead += dt;
-        m.group.rotation.x = -Math.min(Math.PI/2, m.dead*2.2);
-        m.group.position.y = (m.flyY||0) - m.dead*1.4;
-        if(m.dead>0.9){ scene.remove(m.group); monsters.splice(i,1); }
-        continue;
-      }
-      if(m.mixer) m.mixer.update(dt);
-      m.group.position.z += m.speed*dt;
-      if(!m.tpl.rigged){
-        m.group.position.y = (m.flyY||0) + Math.sin(t*3 + m.phase)*0.18;
-        m.group.rotation.z = Math.sin(t*2.2 + m.phase)*0.06;
-      }
-      if(m.group.position.z >= 10.2){
-        scene.remove(m.group); monsters.splice(i,1);
-        baseHp--; syncHud(); beep(90, 0.3, 'sawtooth', 0.16, -40);
-        toast('拠点に到達された！');
-        if(baseHp<=0) gameOver();
-      }
+  updateAim();
+  if (playing){
+    waveT += dt;
+    if (waveT > 25){ waveT = 0; wave++; document.getElementById('wave').textContent = wave; }
+    spawnT -= dt;
+    const interval = Math.max(0.55, 1.5 - wave*0.12);
+    if (spawnT <= 0 && monsters.length < 4 + wave*2){ spawnMonster(); spawnT = interval * (0.6 + Math.random()*0.7); }
+    cool -= dt;
+    if (firing && cool <= 0){ shoot(); cool = 0.30; }
+  }
+  for (let i = monsters.length-1; i >= 0; i--){
+    const m = monsters[i];
+    m.t += dt;
+    if (m.mixer) m.mixer.update(dt);
+    m.group.position.z += m.speed * dt;
+    if (!m.mixer) m.group.position.y = m.baseY + Math.sin(m.t*2.2) * 0.16;
+    m.group.rotation.y = m.group.userData.baseRotY + Math.sin(m.t*0.7) * 0.06;
+    if (m.group.position.z >= 10.5){
+      scene.remove(m.group);
+      monsters.splice(i, 1);
+      hp--;
+      document.getElementById('hp').textContent = hp;
+      beep(70, 0.3, 'sawtooth', 0.14);
+      if (hp <= 0) gameOver();
     }
-    // 砲弾
-    for(let i=balls.length-1;i>=0;i--){
-      const b = balls[i];
-      b.position.addScaledVector(b.userData.v, dt);
-      let hit=false;
-      for(const m of monsters){
-        if(m.dead) continue;
-        const c = m.group.position.clone(); c.y += m.tpl.height*0.5;
-        if(b.position.distanceTo(c) < m.radius + 0.5){
-          hit=true; m.hp--;
-          burst(b.position, 0xffa53a, 10, 4);
-          beep(300, 0.08, 'square', 0.1, 120);
-          if(m.hp<=0){
-            m.dead = 0.0001; score += m.tpl.score; kills++;
-            burst(c, 0xd94f3a, 22, 6.5);
-            beep(520, 0.22, 'triangle', 0.14, -300);
-            toast('+'+m.tpl.score);
-          } else {
-            m.group.position.z -= 0.7;
-          }
-          syncHud();
-          break;
+  }
+  for (let i = balls.length-1; i >= 0; i--){
+    const b = balls[i];
+    b.userData.prev.copy(b.position);
+    b.position.addScaledVector(b.userData.vel, dt);
+    b.userData.life -= dt;
+    const seg = b.position.clone().sub(b.userData.prev);
+    const steps = Math.max(1, Math.ceil(seg.length()/0.4));
+    let hitDone = false;
+    for (let stp = 1; stp <= steps && !hitDone; stp++){
+      const px = b.userData.prev.x + seg.x*stp/steps;
+      const py = b.userData.prev.y + seg.y*stp/steps;
+      const pz = b.userData.prev.z + seg.z*stp/steps;
+      for (const m of monsters){
+        const g = m.group.position;
+        if (Math.abs(px-g.x) <= m.hx && Math.abs(pz-g.z) <= m.hz && py >= g.y-0.3 && py <= g.y + m.h + 0.3){
+          damage(m); hitDone = true; break;
         }
       }
-      if(hit || b.position.z < -120 || b.position.y < -2 || Math.abs(b.position.x) > 80){
-        scene.remove(b); balls.splice(i,1);
-      }
     }
-    syncHud();
+    if (hitDone || b.userData.life <= 0 || b.position.y < 0){
+      scene.remove(b);
+      balls.splice(i, 1);
+    }
   }
-  // 破片
-  for(let i=shards.length-1;i>=0;i--){
-    const s = shards[i];
-    s.userData.life -= dt;
-    s.userData.v.y -= 12*dt;
-    s.position.addScaledVector(s.userData.v, dt);
-    s.rotation.x += dt*6; s.rotation.y += dt*5;
-    if(s.userData.life<=0 || s.position.y<0){ scene.remove(s); shards.splice(i,1); }
+  for (let i = parts.length-1; i >= 0; i--){
+    const p = parts[i];
+    p.userData.life -= dt;
+    p.userData.vel.y -= 18*dt;
+    p.position.addScaledVector(p.userData.vel, dt);
+    if (p.userData.life <= 0){ scene.remove(p); parts.splice(i, 1); }
   }
-  updateAim();
   renderer.render(scene, camera);
 }
-animate();
-addEventListener('resize', ()=>{
+loop();
+loadRoster();
+
+addEventListener('resize', () => {
   camera.aspect = innerWidth/innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
 });
 </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "eb25e9e14bcf43048d51e3a13d31d35e"}'></script>
 </body>
 </html>

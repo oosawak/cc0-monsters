@@ -1,0 +1,1170 @@
+[
+ {
+  "url": "files/converted/evil-giant-rat/rat_2.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/dinosaur-1/dinosaur.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/piranha/piranha_mesh.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/egg/egg.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/bunny-without-fur/bunny.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/sheep/owca.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/little-slime/slimemodel.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/5-low-poly-animals/bird.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/5-low-poly-animals/chick.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/5-low-poly-animals/fish.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/5-low-poly-animals/red-fox.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/5-low-poly-animals/whale.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/lucky-bunny/luckybunny.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/cobra-0/cobra.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/wolf-1/wolf.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/gorilla-male/gorilla_male.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/hippo/hippo.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/tiger/tiger.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/beisa-oryx-a-type-of-antelope/oryx.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/crocodile/croc2.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/auroch-male-and-female/auroch_bull.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/auroch-male-and-female/auroch_cow.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/white-rhinoceros/white_rhino.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/mouse-basemesh/mouse.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/pixispider/pixispider.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/bird-basemesh/bird.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/flying-squirrel/squirrel.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/swamp-limule/limule-final.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/rabbit-0/rabbit.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/deer-female/doe.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/old-deer-male/deer1.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/fish-animated/scardinius.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/butterfly-animated/butterfly.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/rooster-animated/rooster.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/chicken-animated/chickenv2.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/raven-0/raven_0.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/whale-lowpoly/whale_0.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/robot-pack-3d/basemodel.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/robot-pack-3d/smallermodel.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/rubberduck/rubberduck.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/sentry-2-sentry-bot-mark-2/quandtum_sentry-2_v1_0.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/creature-rat/rat_1.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/ba-2-blast-all-bot-mark-2/quandtum_ba-2_v1_1.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/shark-low-poly/shark-new.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/pinguin-low-poly/pingouin-new.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/white-bear-low-poly/bear.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/rigged-horse/riggedhorse.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/low-poly-shark/shark.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/forest-monster/forest-monster-final.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/pato/pato_1.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/porcoassync/porco_assync_0.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/porco/porco.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/brontosaurus/brontosaurus.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/alien-space/alienspace_0.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/dromaeosaur-dinosaur/dromaeosaur.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/low-poly-3d-pig/pig.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/dog-low-poly-rigged/dog-jack-russel-release.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/lemur/lemur.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/food-themed-character-pack/garlic_man.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/food-themed-character-pack/loaf.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/food-themed-character-pack/onion_man.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/food-themed-character-pack/vegking.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/ocean-trio/ocean-trio.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/animated-animales-low-poly/cat.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/animated-animales-low-poly/dog.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/animated-animales-low-poly/eagle.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/animated-animales-low-poly/piranha.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/animated-animales-low-poly/wolf.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/fbx-blend-lowpoly-animated-slime/slime.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/animated-fish/dolphin.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/animated-fish/fish1.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/animated-fish/fish2.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/animated-fish/fish3.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/animated-fish/manta-ray.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/animated-fish/shark.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/animated-fish/whale.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/vampire-bat-animated/bat_v5.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/3d-gum-bot/3d-gum-bot.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/bird-yellow-billed-shrike/bird_shrike1.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/cethiels-dragon-3d/dragon-2_79b.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/cethiels-dragon-3d/dragon-2_80.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/cethiels-dragon-3d/dragon.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/3d-hornetwasp/hornet.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/3d-hornetwasp/hornet1.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/3d-hornetwasp/hornet2.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/3d-hornetwasp/hornet3-mirror-mod-applied.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/3d-hornetwasp/hornet4-rigging.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/3d-hornetwasp/hornet5-rigging.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/3d-hornetwasp/hornet6-animating.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/simple-cat/cat_2-80.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/simple-cat/cat.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/armadillo-foe/armadillo-model.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/armadillo-foe/armadillo.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/rat-pack/rat_3.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/rat-pack/ratpack.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/rat-pack/rat.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/urho/urho.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/hand-painted-bunny-unrigged-version/bunny.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/esox-animated-fish/esox.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/esox-animated-fish/esoxv2-wip2.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/earth-dragon-lowpoly/earthdragon.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/alien.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/alien_tall.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/bat.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/bee.glb",
+  "rigged": true,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/cactus.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/chicken.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/crab.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/cthulhu.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/cyclops.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/converted/textured-cute-monster-pack/deer.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/baby-dragon/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/brachiosaurus/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/cartoon-dragon/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/chinese-dragon/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/crystal-dragon/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/dragon/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/dragon-head/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/gargoyle/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/griffin/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/horror-monster/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/hydra/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/kitsune-fox/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/kraken/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/low-poly-dragon/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/low-poly-dragon-head/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/low-poly-t-rex/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/low-poly-unicorn/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/mammoth/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/mimic-chest/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/phoenix/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/pterodactyl/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/realistic-t-rex/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/sabertooth-tiger/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/grab3d/spinosaurus/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/spirit-stag/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/stegosaurus/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/stone-golem/rigged/stone-golem-rigged.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/stylized-zombie/rigged/stylized-zombie-rigged.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/t-rex/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 3.4,
+  "hp": 3,
+  "score": 300
+ },
+ {
+  "url": "files/grab3d/triceratops/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 1.7,
+  "hp": 1,
+  "score": 100
+ },
+ {
+  "url": "files/grab3d/unicorn/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/velociraptor/preview.glb",
+  "rigged": false,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/werewolf/rigged/werewolf-rigged.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/wyvern/preview.glb",
+  "rigged": false,
+  "fly": true,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ },
+ {
+  "url": "files/grab3d/yeti/rigged/yeti-rigged.glb",
+  "rigged": true,
+  "fly": false,
+  "h": 2.6,
+  "hp": 2,
+  "score": 200
+ }
+]

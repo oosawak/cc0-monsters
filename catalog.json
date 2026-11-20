@@ -1,5 +1,5 @@
 {
- "summary": "全115件（OpenGameArt 71 / Grab3D 35 / Quaternius 9）・リグ付き 45件・アニメ付き 45件",
+ "summary": "全115件（OpenGameArt 71 / Grab3D 35 / Quaternius 9）・リグ付き 58件・アニメ付き 48件",
  "entries": [
   {
    "title": "Stone Golem",
@@ -54,7 +54,9 @@
      "bytes": 14708156,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": "files/vrm/stone-golem.vrm"
   },
   {
    "title": "Stylized Zombie",
@@ -109,7 +111,9 @@
      "bytes": 14157668,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": "files/vrm/stylized-zombie.vrm"
   },
   {
    "title": "Werewolf",
@@ -164,7 +168,9 @@
      "bytes": 14286624,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": "files/vrm/werewolf.vrm"
   },
   {
    "title": "Yeti",
@@ -219,7 +225,9 @@
      "bytes": 14704792,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": "files/vrm/yeti.vrm"
   },
   {
    "title": "3D Hornet/Wasp",
@@ -230,18 +238,282 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Idle"
+   ],
    "thumb": "thumbs/oga/3d-hornetwasp.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/3d-hornetwasp/hornet6-animating.glb",
    "detail": "作者: kooow / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）hornet",
+     "url": "files/converted/3d-hornetwasp/hornet.glb",
+     "bytes": 43068,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）hornet1",
+     "url": "files/converted/3d-hornetwasp/hornet1.glb",
+     "bytes": 47448,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）hornet2",
+     "url": "files/converted/3d-hornetwasp/hornet2.glb",
+     "bytes": 75156,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）hornet3-mirror-mod-applied",
+     "url": "files/converted/3d-hornetwasp/hornet3-mirror-mod-applied.glb",
+     "bytes": 156128,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）hornet4-rigging",
+     "url": "files/converted/3d-hornetwasp/hornet4-rigging.glb",
+     "bytes": 246940,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）hornet5-rigging",
+     "url": "files/converted/3d-hornetwasp/hornet5-rigging.glb",
+     "bytes": 247648,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）hornet6-animating",
+     "url": "files/converted/3d-hornetwasp/hornet6-animating.glb",
+     "bytes": 292240,
+     "hosted": true
+    },
     {
      "label": "wasp_0.zip",
      "url": "files/opengameart/3d-hornetwasp/wasp_0.zip",
      "bytes": 9346183,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "5 Low poly animals",
+   "slug": "5-low-poly-animals",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/5-low-poly-animals",
+   "author": "styno333",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "ArmatureAction",
+    "ArmatureAction.002"
+   ],
+   "thumb": "thumbs/oga/5-low-poly-animals.gif",
+   "view_glb": "files/converted/5-low-poly-animals/bird.glb",
+   "detail": "作者: styno333 / 形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）bird",
+     "url": "files/converted/5-low-poly-animals/bird.glb",
+     "bytes": 31244,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）chick",
+     "url": "files/converted/5-low-poly-animals/chick.glb",
+     "bytes": 52416,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）fish",
+     "url": "files/converted/5-low-poly-animals/fish.glb",
+     "bytes": 52820,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）red-fox",
+     "url": "files/converted/5-low-poly-animals/red-fox.glb",
+     "bytes": 70932,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）whale",
+     "url": "files/converted/5-low-poly-animals/whale.glb",
+     "bytes": 103324,
+     "hosted": true
+    },
+    {
+     "label": "Animals Pack by Quaternius.zip",
+     "url": "files/opengameart/5-low-poly-animals/Animals Pack by Quaternius.zip",
+     "bytes": 787893,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Alien Space",
+   "slug": "alien-space",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/alien-space",
+   "author": "Grandmaster B",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Action"
+   ],
+   "thumb": "thumbs/oga/alien-space.jpg",
+   "view_glb": "files/converted/alien-space/alienspace_0.glb",
+   "detail": "作者: Grandmaster B / 形式: blend",
+   "downloads": [
+    {
+     "label": "GLB（変換）alienspace_0",
+     "url": "files/converted/alien-space/alienspace_0.glb",
+     "bytes": 77004,
+     "hosted": true
+    },
+    {
+     "label": "alienspace_0.blend",
+     "url": "files/opengameart/alien-space/alienspace_0.blend",
+     "bytes": 4479604,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Animated Animales Low Poly",
+   "slug": "animated-animales-low-poly",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/animated-animales-low-poly",
+   "author": "HR78",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Bite",
+    "Flying",
+    "Idle",
+    "Swimming",
+    "Walking"
+   ],
+   "thumb": "thumbs/oga/animated-animales-low-poly.png",
+   "view_glb": "files/converted/animated-animales-low-poly/cat.glb",
+   "detail": "作者: HR78 / 形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）cat",
+     "url": "files/converted/animated-animales-low-poly/cat.glb",
+     "bytes": 144796,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）dog",
+     "url": "files/converted/animated-animales-low-poly/dog.glb",
+     "bytes": 125964,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）eagle",
+     "url": "files/converted/animated-animales-low-poly/eagle.glb",
+     "bytes": 200740,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）piranha",
+     "url": "files/converted/animated-animales-low-poly/piranha.glb",
+     "bytes": 147784,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）wolf",
+     "url": "files/converted/animated-animales-low-poly/wolf.glb",
+     "bytes": 128944,
+     "hosted": true
+    },
+    {
+     "label": "Animal Pack Vol.2 by @Quaternius.zip",
+     "url": "files/opengameart/animated-animales-low-poly/Animal Pack Vol.2 by @Quaternius.zip",
+     "bytes": 2069972,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Animated Fish",
+   "slug": "animated-fish",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/animated-fish",
+   "author": "",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Swim",
+    "Swim.001"
+   ],
+   "thumb": "thumbs/oga/animated-fish.png",
+   "view_glb": "files/converted/animated-fish/dolphin.glb",
+   "detail": "形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）dolphin",
+     "url": "files/converted/animated-fish/dolphin.glb",
+     "bytes": 59628,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）fish1",
+     "url": "files/converted/animated-fish/fish1.glb",
+     "bytes": 66168,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）fish2",
+     "url": "files/converted/animated-fish/fish2.glb",
+     "bytes": 58112,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）fish3",
+     "url": "files/converted/animated-fish/fish3.glb",
+     "bytes": 74624,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）manta-ray",
+     "url": "files/converted/animated-fish/manta-ray.glb",
+     "bytes": 97640,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）shark",
+     "url": "files/converted/animated-fish/shark.glb",
+     "bytes": 72304,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）whale",
+     "url": "files/converted/animated-fish/whale.glb",
+     "bytes": 65600,
+     "hosted": true
+    },
+    {
+     "label": "Animated Fish Pack by @Quaternius.zip",
+     "url": "files/opengameart/animated-fish/Animated Fish Pack by @Quaternius.zip",
+     "bytes": 1024233,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "BA-2 (Blast All Bot Mark 2)",
@@ -252,18 +524,28 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "PoseLib"
+   ],
    "thumb": "thumbs/oga/ba-2-blast-all-bot-mark-2.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/ba-2-blast-all-bot-mark-2/quandtum_ba-2_v1_1.glb",
    "detail": "作者: Julius / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）quandtum_ba-2_v1_1",
+     "url": "files/converted/ba-2-blast-all-bot-mark-2/quandtum_ba-2_v1_1.glb",
+     "bytes": 362768,
+     "hosted": true
+    },
     {
      "label": "Quandtum_BA-2_v1_1.zip",
      "url": "files/opengameart/ba-2-blast-all-bot-mark-2/Quandtum_BA-2_v1_1.zip",
      "bytes": 16379378,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Butterfly (animated)",
@@ -274,18 +556,30 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Flying",
+    "Sitting1",
+    "Sitting2"
+   ],
    "thumb": "thumbs/oga/butterfly-animated.png",
-   "view_glb": "",
+   "view_glb": "files/converted/butterfly-animated/butterfly.glb",
    "detail": "作者: Zuxal / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）butterfly",
+     "url": "files/converted/butterfly-animated/butterfly.glb",
+     "bytes": 77428,
+     "hosted": true
+    },
     {
      "label": "Butterfly.zip",
      "url": "files/opengameart/butterfly-animated/Butterfly.zip",
      "bytes": 375804,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Cethiel's Dragon 3D",
@@ -296,18 +590,43 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Attack",
+    "Die",
+    "Idle",
+    "Walk"
+   ],
    "thumb": "thumbs/oga/cethiels-dragon-3d.png",
-   "view_glb": "",
+   "view_glb": "files/converted/cethiels-dragon-3d/dragon-2_79b.glb",
    "detail": "作者: kooow / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）dragon-2_79b",
+     "url": "files/converted/cethiels-dragon-3d/dragon-2_79b.glb",
+     "bytes": 309204,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）dragon-2_80",
+     "url": "files/converted/cethiels-dragon-3d/dragon-2_80.glb",
+     "bytes": 603140,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）dragon",
+     "url": "files/converted/cethiels-dragon-3d/dragon.glb",
+     "bytes": 358408,
+     "hosted": true
+    },
     {
      "label": "dragon_oga.zip",
      "url": "files/opengameart/cethiels-dragon-3d/dragon_oga.zip",
      "bytes": 1351111,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Chicken (animated)",
@@ -318,18 +637,39 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "BeginPecking",
+    "Dying",
+    "Eating",
+    "EndPecking",
+    "Idle",
+    "Idle1",
+    "Idle2",
+    "Pecking1",
+    "Pecking2",
+    "Pecking3",
+    "Stand",
+    "StopPecking"
+   ],
    "thumb": "thumbs/oga/chicken-animated.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/chicken-animated/chickenv2.glb",
    "detail": "作者: Snabisch / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）chickenv2",
+     "url": "files/converted/chicken-animated/chickenv2.glb",
+     "bytes": 1502660,
+     "hosted": true
+    },
     {
      "label": "chicken_0.zip",
      "url": "files/opengameart/chicken-animated/chicken_0.zip",
      "bytes": 6214921,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Cobra",
@@ -342,16 +682,24 @@
    "animated": true,
    "anims": [],
    "thumb": "thumbs/oga/cobra-0.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/cobra-0/cobra.glb",
    "detail": "作者: VWolfdog / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）cobra",
+     "url": "files/converted/cobra-0/cobra.glb",
+     "bytes": 30604,
+     "hosted": true
+    },
     {
      "label": "cobra.zip",
      "url": "files/opengameart/cobra-0/cobra.zip",
      "bytes": 86688,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Deer Female",
@@ -362,11 +710,29 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Die.000",
+    "Die.001",
+    "Die.002",
+    "Eat.001",
+    "Idle",
+    "Idle.000",
+    "Idle.001",
+    "LookAround.000",
+    "LookAround.001",
+    "Run",
+    "Stand"
+   ],
    "thumb": "thumbs/oga/deer-female.png",
-   "view_glb": "",
+   "view_glb": "files/converted/deer-female/doe.glb",
    "detail": "作者: Snabisch / 形式: 7z, blend",
    "downloads": [
+    {
+     "label": "GLB（変換）doe",
+     "url": "files/converted/deer-female/doe.glb",
+     "bytes": 785228,
+     "hosted": true
+    },
     {
      "label": "deer-female-FBX.7z",
      "url": "files/opengameart/deer-female/deer-female-FBX.7z",
@@ -379,7 +745,9 @@
      "bytes": 5359688,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Dromaeosaur Dinosaur",
@@ -392,16 +760,98 @@
    "animated": true,
    "anims": [],
    "thumb": "thumbs/oga/dromaeosaur-dinosaur.png",
-   "view_glb": "",
+   "view_glb": "files/converted/dromaeosaur-dinosaur/dromaeosaur.glb",
    "detail": "作者: Snabisch / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）dromaeosaur",
+     "url": "files/converted/dromaeosaur-dinosaur/dromaeosaur.glb",
+     "bytes": 2501236,
+     "hosted": true
+    },
     {
      "label": "Dromaeosaur.blend",
      "url": "https://opengameart.org/sites/default/files/Dromaeosaur.blend",
      "bytes": 61768240,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Earth Dragon (lowpoly)",
+   "slug": "earth-dragon-lowpoly",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/earth-dragon-lowpoly",
+   "author": "kooow",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "metarig|metarig|metarig.002|metarig|metarigAction|metarig|metar"
+   ],
+   "thumb": "thumbs/oga/earth-dragon-lowpoly.jpg",
+   "view_glb": "files/converted/earth-dragon-lowpoly/earthdragon.glb",
+   "detail": "作者: kooow / 形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）earthdragon",
+     "url": "files/converted/earth-dragon-lowpoly/earthdragon.glb",
+     "bytes": 1310584,
+     "hosted": true
+    },
+    {
+     "label": "earthdragon.zip",
+     "url": "files/opengameart/earth-dragon-lowpoly/earthdragon.zip",
+     "bytes": 4006115,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Esox - Animated Fish",
+   "slug": "esox-animated-fish",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/esox-animated-fish",
+   "author": "kooow",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Armature|Armature|Basic",
+    "Basic",
+    "Idle",
+    "Swiming-Fast",
+    "Swiming-Slow"
+   ],
+   "thumb": "thumbs/oga/esox-animated-fish.png",
+   "view_glb": "files/converted/esox-animated-fish/esox.glb",
+   "detail": "作者: kooow / 形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）esox",
+     "url": "files/converted/esox-animated-fish/esox.glb",
+     "bytes": 15448804,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）esoxv2-wip2",
+     "url": "files/converted/esox-animated-fish/esoxv2-wip2.glb",
+     "bytes": 837076,
+     "hosted": true
+    },
+    {
+     "label": "esox.zip",
+     "url": "files/opengameart/esox-animated-fish/esox.zip",
+     "bytes": 16871228,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Evil Giant Rat",
@@ -412,18 +862,73 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Attack.000",
+    "Attack.001",
+    "Attack.002",
+    "Attack.003",
+    "Attack.Begin",
+    "Attack.End",
+    "Die",
+    "Hit",
+    "Idle.000",
+    "Idle.001",
+    "Idle.002",
+    "Run"
+   ],
    "thumb": "thumbs/oga/evil-giant-rat.png",
-   "view_glb": "",
+   "view_glb": "files/converted/evil-giant-rat/rat_2.glb",
    "detail": "作者: Tozan / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）rat_2",
+     "url": "files/converted/evil-giant-rat/rat_2.glb",
+     "bytes": 1705300,
+     "hosted": true
+    },
     {
      "label": "rat_2.blend",
      "url": "files/opengameart/evil-giant-rat/rat_2.blend",
      "bytes": 6833728,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "FBX + Blend LowPoly animated slime",
+   "slug": "fbx-blend-lowpoly-animated-slime",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/fbx-blend-lowpoly-animated-slime",
+   "author": "raaaahman",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Attack",
+    "IDLE",
+    "ROAM"
+   ],
+   "thumb": "thumbs/oga/fbx-blend-lowpoly-animated-slime.png",
+   "view_glb": "files/converted/fbx-blend-lowpoly-animated-slime/slime.glb",
+   "detail": "作者: raaaahman / 形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）slime",
+     "url": "files/converted/fbx-blend-lowpoly-animated-slime/slime.glb",
+     "bytes": 33548,
+     "hosted": true
+    },
+    {
+     "label": "Slime_1.zip",
+     "url": "files/opengameart/fbx-blend-lowpoly-animated-slime/Slime_1.zip",
+     "bytes": 9869834,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Fish (Animated)",
@@ -434,18 +939,29 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Idle",
+    "swim"
+   ],
    "thumb": "thumbs/oga/fish-animated.png",
-   "view_glb": "",
+   "view_glb": "files/converted/fish-animated/scardinius.glb",
    "detail": "作者: XaosXV / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）scardinius",
+     "url": "files/converted/fish-animated/scardinius.glb",
+     "bytes": 101620,
+     "hosted": true
+    },
     {
      "label": "fish.zip",
      "url": "files/opengameart/fish-animated/fish.zip",
      "bytes": 2866729,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Forest Monster",
@@ -456,18 +972,68 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Attack",
+    "Dying",
+    "Idle",
+    "Melee_Hold",
+    "Stand",
+    "Walk"
+   ],
    "thumb": "thumbs/oga/forest-monster.png",
-   "view_glb": "",
+   "view_glb": "files/converted/forest-monster/forest-monster-final.glb",
    "detail": "作者: Alopex / 形式: 7z",
    "downloads": [
+    {
+     "label": "GLB（変換）forest-monster-final",
+     "url": "files/converted/forest-monster/forest-monster-final.glb",
+     "bytes": 910848,
+     "hosted": true
+    },
     {
      "label": "forest-monster_0.7z",
      "url": "files/opengameart/forest-monster/forest-monster_0.7z",
      "bytes": 24888014,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Lemur",
+   "slug": "lemur",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/lemur",
+   "author": "farrer",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "ADefault",
+    "AttackMelee",
+    "idle",
+    "run"
+   ],
+   "thumb": "thumbs/oga/lemur.png",
+   "view_glb": "files/converted/lemur/lemur.glb",
+   "detail": "作者: farrer / 形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）lemur",
+     "url": "files/converted/lemur/lemur.glb",
+     "bytes": 376872,
+     "hosted": true
+    },
+    {
+     "label": "Lemur_Blend_Fbx_Obj.zip",
+     "url": "files/opengameart/lemur/Lemur_Blend_Fbx_Obj.zip",
+     "bytes": 1072409,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Little Slime",
@@ -480,16 +1046,65 @@
    "animated": true,
    "anims": [],
    "thumb": "thumbs/oga/little-slime.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/little-slime/slimemodel.glb",
    "detail": "作者: rubberduck / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）slimemodel",
+     "url": "files/converted/little-slime/slimemodel.glb",
+     "bytes": 89816,
+     "hosted": true
+    },
     {
      "label": "littleslime_5.zip",
      "url": "files/opengameart/little-slime/littleslime_5.zip",
      "bytes": 584823,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Lucky Bunny",
+   "slug": "lucky-bunny",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/lucky-bunny",
+   "author": "sandsound",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "ConeAction",
+    "Crouch",
+    "DoubleJump",
+    "Idle2",
+    "Jump_down",
+    "Jump_up",
+    "Rise",
+    "Run",
+    "Stumble",
+    "maskAction"
+   ],
+   "thumb": "thumbs/oga/lucky-bunny.png",
+   "view_glb": "files/converted/lucky-bunny/luckybunny.glb",
+   "detail": "作者: sandsound / 形式: blend",
+   "downloads": [
+    {
+     "label": "GLB（変換）luckybunny",
+     "url": "files/converted/lucky-bunny/luckybunny.glb",
+     "bytes": 281172,
+     "hosted": true
+    },
+    {
+     "label": "LuckyBunny.blend",
+     "url": "files/opengameart/lucky-bunny/LuckyBunny.blend",
+     "bytes": 2466516,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Old Deer Male",
@@ -500,18 +1115,37 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Die.000",
+    "Die.001",
+    "Eat.001",
+    "Idle",
+    "Idle.000",
+    "Idle.001",
+    "LookAround.000",
+    "LookAround.001",
+    "Run",
+    "Stand"
+   ],
    "thumb": "thumbs/oga/old-deer-male.png",
-   "view_glb": "",
+   "view_glb": "files/converted/old-deer-male/deer1.glb",
    "detail": "作者: Snabisch / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）deer1",
+     "url": "files/converted/old-deer-male/deer1.glb",
+     "bytes": 881124,
+     "hosted": true
+    },
     {
      "label": "deer1.blend",
      "url": "files/opengameart/old-deer-male/deer1.blend",
      "bytes": 7710492,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Rabbit",
@@ -522,11 +1156,27 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Basic",
+    "Dead",
+    "Dying.000",
+    "Dying.001",
+    "Guarding",
+    "Jump",
+    "Running",
+    "Sitting.000",
+    "Sitting.001"
+   ],
    "thumb": "thumbs/oga/rabbit-0.png",
-   "view_glb": "",
+   "view_glb": "files/converted/rabbit-0/rabbit.glb",
    "detail": "作者: Snabisch / 形式: 7z, blend",
    "downloads": [
+    {
+     "label": "GLB（変換）rabbit",
+     "url": "files/converted/rabbit-0/rabbit.glb",
+     "bytes": 1014284,
+     "hosted": true
+    },
     {
      "label": "rabbit-FBX.7z",
      "url": "files/opengameart/rabbit-0/rabbit-FBX.7z",
@@ -539,7 +1189,43 @@
      "bytes": 5996916,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Raven",
+   "slug": "raven-0",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/raven-0",
+   "author": "Teh_Bucket",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Default",
+    "fly",
+    "stand"
+   ],
+   "thumb": "thumbs/oga/raven-0.jpg",
+   "view_glb": "files/converted/raven-0/raven_0.glb",
+   "detail": "作者: Teh_Bucket / 形式: blend",
+   "downloads": [
+    {
+     "label": "GLB（変換）raven_0",
+     "url": "files/converted/raven-0/raven_0.glb",
+     "bytes": 150476,
+     "hosted": true
+    },
+    {
+     "label": "raven_0.blend",
+     "url": "files/opengameart/raven-0/raven_0.blend",
+     "bytes": 1623452,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Rigged Horse",
@@ -552,16 +1238,24 @@
    "animated": true,
    "anims": [],
    "thumb": "thumbs/oga/rigged-horse.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/rigged-horse/riggedhorse.glb",
    "detail": "作者: Iconoclast / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）riggedhorse",
+     "url": "files/converted/rigged-horse/riggedhorse.glb",
+     "bytes": 519820,
+     "hosted": true
+    },
     {
      "label": "riggedHorse.blend",
      "url": "files/opengameart/rigged-horse/riggedHorse.blend",
      "bytes": 20194164,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Rooster (Animated)",
@@ -572,18 +1266,39 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Dying",
+    "Idle",
+    "Idle1",
+    "Idle2",
+    "Pecking.001",
+    "Pecking.002",
+    "Pecking.003",
+    "Pecking.Begin",
+    "Pecking.End",
+    "Screaming",
+    "Standing",
+    "Walking"
+   ],
    "thumb": "thumbs/oga/rooster-animated.png",
-   "view_glb": "",
+   "view_glb": "files/converted/rooster-animated/rooster.glb",
    "detail": "作者: abdolama / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）rooster",
+     "url": "files/converted/rooster-animated/rooster.glb",
+     "bytes": 1838732,
+     "hosted": true
+    },
     {
      "label": "rooster.zip",
      "url": "files/opengameart/rooster-animated/rooster.zip",
      "bytes": 8023955,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "SENTRY-2 (Sentry Bot Mark 2)",
@@ -594,18 +1309,61 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "PoseLib"
+   ],
    "thumb": "thumbs/oga/sentry-2-sentry-bot-mark-2.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/sentry-2-sentry-bot-mark-2/quandtum_sentry-2_v1_0.glb",
    "detail": "作者: bart / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）quandtum_sentry-2_v1_0",
+     "url": "files/converted/sentry-2-sentry-bot-mark-2/quandtum_sentry-2_v1_0.glb",
+     "bytes": 159888,
+     "hosted": true
+    },
     {
      "label": "Quandtum_SENTRY-2.zip",
      "url": "files/opengameart/sentry-2-sentry-bot-mark-2/Quandtum_SENTRY-2.zip",
      "bytes": 18245986,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Sheep",
+   "slug": "sheep",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/sheep",
+   "author": "",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Armature.002Action.001",
+    "Armature.002Action.003"
+   ],
+   "thumb": "thumbs/oga/sheep.jpg",
+   "view_glb": "files/converted/sheep/owca.glb",
+   "detail": "形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）owca",
+     "url": "files/converted/sheep/owca.glb",
+     "bytes": 773972,
+     "hosted": true
+    },
+    {
+     "label": "owca.zip",
+     "url": "files/opengameart/sheep/owca.zip",
+     "bytes": 2793053,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Swamp Limule",
@@ -616,18 +1374,164 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Attack.000",
+    "Attack.001",
+    "Attack.002",
+    "Forward",
+    "Idle",
+    "Left",
+    "OnBack",
+    "OnBack.Attack",
+    "Right"
+   ],
    "thumb": "thumbs/oga/swamp-limule.png",
-   "view_glb": "",
+   "view_glb": "files/converted/swamp-limule/limule-final.glb",
    "detail": "作者: Snabisch / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）limule-final",
+     "url": "files/converted/swamp-limule/limule-final.glb",
+     "bytes": 717736,
+     "hosted": true
+    },
     {
      "label": "limule-final.blend",
      "url": "files/opengameart/swamp-limule/limule-final.blend",
      "bytes": 4366679,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Textured Cute Monster Pack",
+   "slug": "textured-cute-monster-pack",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/textured-cute-monster-pack",
+   "author": "",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Bite_Front",
+    "Bite_InPlace",
+    "Dance",
+    "Death",
+    "Flying",
+    "HitRecieve",
+    "Idle",
+    "Jump",
+    "No",
+    "Walk",
+    "Yes"
+   ],
+   "thumb": "thumbs/oga/textured-cute-monster-pack.jpg",
+   "view_glb": "files/converted/textured-cute-monster-pack/alien.glb",
+   "detail": "形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）alien",
+     "url": "files/converted/textured-cute-monster-pack/alien.glb",
+     "bytes": 142648,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）alien_tall",
+     "url": "files/converted/textured-cute-monster-pack/alien_tall.glb",
+     "bytes": 114680,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）bat",
+     "url": "files/converted/textured-cute-monster-pack/bat.glb",
+     "bytes": 127032,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）bee",
+     "url": "files/converted/textured-cute-monster-pack/bee.glb",
+     "bytes": 118932,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）cactus",
+     "url": "files/converted/textured-cute-monster-pack/cactus.glb",
+     "bytes": 139600,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）chicken",
+     "url": "files/converted/textured-cute-monster-pack/chicken.glb",
+     "bytes": 111556,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）crab",
+     "url": "files/converted/textured-cute-monster-pack/crab.glb",
+     "bytes": 151524,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）cthulhu",
+     "url": "files/converted/textured-cute-monster-pack/cthulhu.glb",
+     "bytes": 141332,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）cyclops",
+     "url": "files/converted/textured-cute-monster-pack/cyclops.glb",
+     "bytes": 112920,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）deer",
+     "url": "files/converted/textured-cute-monster-pack/deer.glb",
+     "bytes": 113972,
+     "hosted": true
+    },
+    {
+     "label": "cute_animated_monsters_-_aug_2020.zip",
+     "url": "files/opengameart/textured-cute-monster-pack/cute_animated_monsters_-_aug_2020.zip",
+     "bytes": 10181866,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Urho",
+   "slug": "urho",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/urho",
+   "author": "kooow",
+   "license": "CC0",
+   "rigged": true,
+   "animated": true,
+   "anims": [
+    "Swim"
+   ],
+   "thumb": "thumbs/oga/urho.gif",
+   "view_glb": "files/converted/urho/urho.glb",
+   "detail": "作者: kooow / 形式: blend",
+   "downloads": [
+    {
+     "label": "GLB（変換）urho",
+     "url": "files/converted/urho/urho.glb",
+     "bytes": 282124,
+     "hosted": true
+    },
+    {
+     "label": "urho.blend",
+     "url": "files/opengameart/urho/urho.blend",
+     "bytes": 9054008,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Vampire Bat (Animated)",
@@ -638,18 +1542,31 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "Bat_Attack",
+    "Bat_Die",
+    "Bat_Flying",
+    "Bat_preview_position"
+   ],
    "thumb": "thumbs/oga/vampire-bat-animated.png",
-   "view_glb": "",
+   "view_glb": "files/converted/vampire-bat-animated/bat_v5.glb",
    "detail": "作者: Danimal / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）bat_v5",
+     "url": "files/converted/vampire-bat-animated/bat_v5.glb",
+     "bytes": 3661832,
+     "hosted": true
+    },
     {
      "label": "animated_vampire_bat.zip",
      "url": "files/opengameart/vampire-bat-animated/animated_vampire_bat.zip",
      "bytes": 16497090,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Whale (lowpoly)",
@@ -660,18 +1577,28 @@
    "license": "CC0",
    "rigged": true,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "swim"
+   ],
    "thumb": "thumbs/oga/whale-lowpoly.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/whale-lowpoly/whale_0.glb",
    "detail": "作者: looneybits / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）whale_0",
+     "url": "files/converted/whale-lowpoly/whale_0.glb",
+     "bytes": 18848,
+     "hosted": true
+    },
     {
      "label": "whale_0.blend",
      "url": "files/opengameart/whale-lowpoly/whale_0.blend",
      "bytes": 889732,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Animated Alien Pack",
@@ -693,7 +1620,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Animated Cute Fish Pack",
@@ -715,7 +1644,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Animated Dinosaur Pack",
@@ -737,7 +1668,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Animated Fish Pack",
@@ -759,7 +1692,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Animated Monster Pack",
@@ -781,7 +1716,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Animated Zombie Pack",
@@ -803,7 +1740,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Cute Animated Monsters Pack",
@@ -825,7 +1764,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Easy Enemy Pack",
@@ -847,7 +1788,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "Farm Animal Pack",
@@ -869,7 +1812,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "3D Gum Bot",
@@ -882,38 +1827,60 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/3d-gum-bot.png",
-   "view_glb": "",
+   "view_glb": "files/converted/3d-gum-bot/3d-gum-bot.glb",
    "detail": "作者: surt / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）3d-gum-bot",
+     "url": "files/converted/3d-gum-bot/3d-gum-bot.glb",
+     "bytes": 5198520,
+     "hosted": true
+    },
     {
      "label": "3D Gum Bot.zip",
      "url": "https://opengameart.org/sites/default/files/3D%20Gum%20Bot.zip",
      "bytes": 110071127,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
-   "title": "Alien Space",
-   "slug": "alien-space",
+   "title": "Auroch (Male and female)",
+   "slug": "auroch-male-and-female",
    "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/alien-space",
-   "author": "Grandmaster B",
+   "page": "https://opengameart.org/content/auroch-male-and-female",
+   "author": "",
    "license": "CC0",
    "rigged": true,
    "animated": false,
    "anims": [],
-   "thumb": "thumbs/oga/alien-space.jpg",
-   "view_glb": "",
-   "detail": "作者: Grandmaster B / 形式: blend",
+   "thumb": "thumbs/oga/auroch-male-and-female.jpg",
+   "view_glb": "files/converted/auroch-male-and-female/auroch_bull.glb",
+   "detail": "形式: zip",
    "downloads": [
     {
-     "label": "alienspace_0.blend",
-     "url": "files/opengameart/alien-space/alienspace_0.blend",
-     "bytes": 4479604,
+     "label": "GLB（変換）auroch_bull",
+     "url": "files/converted/auroch-male-and-female/auroch_bull.glb",
+     "bytes": 31876,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）auroch_cow",
+     "url": "files/converted/auroch-male-and-female/auroch_cow.glb",
+     "bytes": 31772,
+     "hosted": true
+    },
+    {
+     "label": "auroch.zip",
+     "url": "files/opengameart/auroch-male-and-female/auroch.zip",
+     "bytes": 232341,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Beisa Oryx (a type of antelope)",
@@ -926,16 +1893,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/beisa-oryx-a-type-of-antelope.png",
-   "view_glb": "",
+   "view_glb": "files/converted/beisa-oryx-a-type-of-antelope/oryx.glb",
    "detail": "形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）oryx",
+     "url": "files/converted/beisa-oryx-a-type-of-antelope/oryx.glb",
+     "bytes": 63940,
+     "hosted": true
+    },
     {
      "label": "oryx.zip",
      "url": "files/opengameart/beisa-oryx-a-type-of-antelope/oryx.zip",
      "bytes": 108771,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Bird (Yellow-Billed Shrike)",
@@ -948,16 +1923,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/bird-yellow-billed-shrike.png",
-   "view_glb": "",
+   "view_glb": "files/converted/bird-yellow-billed-shrike/bird_shrike1.glb",
    "detail": "作者: pistachio / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）bird_shrike1",
+     "url": "files/converted/bird-yellow-billed-shrike/bird_shrike1.glb",
+     "bytes": 85180,
+     "hosted": true
+    },
     {
      "label": "bird_yellow_billed_shrike.zip",
      "url": "files/opengameart/bird-yellow-billed-shrike/bird_yellow_billed_shrike.zip",
      "bytes": 11246978,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Dog Low Poly (Rigged)",
@@ -970,9 +1953,15 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/dog-low-poly-rigged.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/dog-low-poly-rigged/dog-jack-russel-release.glb",
    "detail": "形式: blend, zip",
    "downloads": [
+    {
+     "label": "GLB（変換）dog-jack-russel-release",
+     "url": "files/converted/dog-low-poly-rigged/dog-jack-russel-release.glb",
+     "bytes": 290212,
+     "hosted": true
+    },
     {
      "label": "Dog (Jack russel)  Release.blend",
      "url": "files/opengameart/dog-low-poly-rigged/Dog (Jack russel)  Release.blend",
@@ -985,7 +1974,9 @@
      "bytes": 43751,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Flying Squirrel",
@@ -998,16 +1989,72 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/flying-squirrel.png",
-   "view_glb": "",
+   "view_glb": "files/converted/flying-squirrel/squirrel.glb",
    "detail": "作者: Julius / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）squirrel",
+     "url": "files/converted/flying-squirrel/squirrel.glb",
+     "bytes": 366620,
+     "hosted": true
+    },
     {
      "label": "squirrel.blend",
      "url": "files/opengameart/flying-squirrel/squirrel.blend",
      "bytes": 1804144,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
+  },
+  {
+   "title": "Food Themed Character Pack",
+   "slug": "food-themed-character-pack",
+   "source": "OpenGameArt",
+   "page": "https://opengameart.org/content/food-themed-character-pack",
+   "author": "kooow",
+   "license": "CC0",
+   "rigged": true,
+   "animated": false,
+   "anims": [],
+   "thumb": "thumbs/oga/food-themed-character-pack.png",
+   "view_glb": "files/converted/food-themed-character-pack/garlic_man.glb",
+   "detail": "作者: kooow / 形式: zip",
+   "downloads": [
+    {
+     "label": "GLB（変換）garlic_man",
+     "url": "files/converted/food-themed-character-pack/garlic_man.glb",
+     "bytes": 298124,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）loaf",
+     "url": "files/converted/food-themed-character-pack/loaf.glb",
+     "bytes": 733016,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）onion_man",
+     "url": "files/converted/food-themed-character-pack/onion_man.glb",
+     "bytes": 319160,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）vegking",
+     "url": "files/converted/food-themed-character-pack/vegking.glb",
+     "bytes": 616492,
+     "hosted": true
+    },
+    {
+     "label": "food_themed_character_pack_1.zip",
+     "url": "files/opengameart/food-themed-character-pack/food_themed_character_pack_1.zip",
+     "bytes": 7065973,
+     "hosted": true
+    }
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Hippo",
@@ -1020,16 +2067,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/hippo.png",
-   "view_glb": "",
+   "view_glb": "files/converted/hippo/hippo.glb",
    "detail": "作者: Acorn / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）hippo",
+     "url": "files/converted/hippo/hippo.glb",
+     "bytes": 41048,
+     "hosted": true
+    },
     {
      "label": "hippo.zip",
      "url": "files/opengameart/hippo/hippo.zip",
      "bytes": 125663,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Shark (low poly)",
@@ -1042,16 +2097,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/shark-low-poly.png",
-   "view_glb": "",
+   "view_glb": "files/converted/shark-low-poly/shark-new.glb",
    "detail": "作者: DezrasDragons / 形式: 7z",
    "downloads": [
+    {
+     "label": "GLB（変換）shark-new",
+     "url": "files/converted/shark-low-poly/shark-new.glb",
+     "bytes": 45488,
+     "hosted": true
+    },
     {
      "label": "Shark.7z",
      "url": "files/opengameart/shark-low-poly/Shark.7z",
      "bytes": 111137,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Tiger",
@@ -1064,38 +2127,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/tiger.png",
-   "view_glb": "",
+   "view_glb": "files/converted/tiger/tiger.glb",
    "detail": "作者: cdgramos / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）tiger",
+     "url": "files/converted/tiger/tiger.glb",
+     "bytes": 30512,
+     "hosted": true
+    },
     {
      "label": "tiger.zip",
      "url": "files/opengameart/tiger/tiger.zip",
      "bytes": 113060,
      "hosted": true
     }
-   ]
-  },
-  {
-   "title": "Urho",
-   "slug": "urho",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/urho",
-   "author": "kooow",
-   "license": "CC0",
-   "rigged": true,
-   "animated": false,
-   "anims": [],
-   "thumb": "thumbs/oga/urho.gif",
-   "view_glb": "",
-   "detail": "作者: kooow / 形式: blend",
-   "downloads": [
-    {
-     "label": "urho.blend",
-     "url": "files/opengameart/urho/urho.blend",
-     "bytes": 9054008,
-     "hosted": true
-    }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "White Bear (Low poly)",
@@ -1108,16 +2157,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/white-bear-low-poly.png",
-   "view_glb": "",
+   "view_glb": "files/converted/white-bear-low-poly/bear.glb",
    "detail": "形式: 7z",
    "downloads": [
+    {
+     "label": "GLB（変換）bear",
+     "url": "files/converted/white-bear-low-poly/bear.glb",
+     "bytes": 49476,
+     "hosted": true
+    },
     {
      "label": "Bear.7z",
      "url": "files/opengameart/white-bear-low-poly/Bear.7z",
      "bytes": 632612,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Wolf",
@@ -1130,148 +2187,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/wolf-1.png",
-   "view_glb": "",
+   "view_glb": "files/converted/wolf-1/wolf.glb",
    "detail": "作者: Duion2 / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）wolf",
+     "url": "files/converted/wolf-1/wolf.glb",
+     "bytes": 30016,
+     "hosted": true
+    },
     {
      "label": "wolf.zip",
      "url": "files/opengameart/wolf-1/wolf.zip",
      "bytes": 115769,
      "hosted": true
     }
-   ]
-  },
-  {
-   "title": "5 Low poly animals",
-   "slug": "5-low-poly-animals",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/5-low-poly-animals",
-   "author": "styno333",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/5-low-poly-animals.gif",
-   "view_glb": "",
-   "detail": "作者: styno333 / 形式: zip",
-   "downloads": [
-    {
-     "label": "Animals Pack by Quaternius.zip",
-     "url": "files/opengameart/5-low-poly-animals/Animals Pack by Quaternius.zip",
-     "bytes": 787893,
-     "hosted": true
-    }
-   ]
-  },
-  {
-   "title": "Animated Animales Low Poly",
-   "slug": "animated-animales-low-poly",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/animated-animales-low-poly",
-   "author": "HR78",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/animated-animales-low-poly.png",
-   "view_glb": "",
-   "detail": "作者: HR78 / 形式: zip",
-   "downloads": [
-    {
-     "label": "Animal Pack Vol.2 by @Quaternius.zip",
-     "url": "files/opengameart/animated-animales-low-poly/Animal Pack Vol.2 by @Quaternius.zip",
-     "bytes": 2069972,
-     "hosted": true
-    }
-   ]
-  },
-  {
-   "title": "Animated Fish",
-   "slug": "animated-fish",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/animated-fish",
-   "author": "",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/animated-fish.png",
-   "view_glb": "",
-   "detail": "形式: zip",
-   "downloads": [
-    {
-     "label": "Animated Fish Pack by @Quaternius.zip",
-     "url": "files/opengameart/animated-fish/Animated Fish Pack by @Quaternius.zip",
-     "bytes": 1024233,
-     "hosted": true
-    }
-   ]
-  },
-  {
-   "title": "Esox - Animated Fish",
-   "slug": "esox-animated-fish",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/esox-animated-fish",
-   "author": "kooow",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/esox-animated-fish.png",
-   "view_glb": "",
-   "detail": "作者: kooow / 形式: zip",
-   "downloads": [
-    {
-     "label": "esox.zip",
-     "url": "files/opengameart/esox-animated-fish/esox.zip",
-     "bytes": 16871228,
-     "hosted": true
-    }
-   ]
-  },
-  {
-   "title": "FBX + Blend LowPoly animated slime",
-   "slug": "fbx-blend-lowpoly-animated-slime",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/fbx-blend-lowpoly-animated-slime",
-   "author": "raaaahman",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/fbx-blend-lowpoly-animated-slime.png",
-   "view_glb": "",
-   "detail": "作者: raaaahman / 形式: zip",
-   "downloads": [
-    {
-     "label": "Slime_1.zip",
-     "url": "files/opengameart/fbx-blend-lowpoly-animated-slime/Slime_1.zip",
-     "bytes": 9869834,
-     "hosted": true
-    }
-   ]
-  },
-  {
-   "title": "Lemur",
-   "slug": "lemur",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/lemur",
-   "author": "farrer",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/lemur.png",
-   "view_glb": "",
-   "detail": "作者: farrer / 形式: zip",
-   "downloads": [
-    {
-     "label": "Lemur_Blend_Fbx_Obj.zip",
-     "url": "files/opengameart/lemur/Lemur_Blend_Fbx_Obj.zip",
-     "bytes": 1072409,
-     "hosted": true
-    }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Low-poly Shark",
@@ -1284,82 +2217,24 @@
    "animated": true,
    "anims": [],
    "thumb": "thumbs/oga/low-poly-shark.png",
-   "view_glb": "",
+   "view_glb": "files/converted/low-poly-shark/shark.glb",
    "detail": "作者: manwesulimo2004 / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）shark",
+     "url": "files/converted/low-poly-shark/shark.glb",
+     "bytes": 14084,
+     "hosted": true
+    },
     {
      "label": "shark.blend",
      "url": "files/opengameart/low-poly-shark/shark.blend",
      "bytes": 517964,
      "hosted": true
     }
-   ]
-  },
-  {
-   "title": "Lucky Bunny",
-   "slug": "lucky-bunny",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/lucky-bunny",
-   "author": "sandsound",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/lucky-bunny.png",
-   "view_glb": "",
-   "detail": "作者: sandsound / 形式: blend",
-   "downloads": [
-    {
-     "label": "LuckyBunny.blend",
-     "url": "files/opengameart/lucky-bunny/LuckyBunny.blend",
-     "bytes": 2466516,
-     "hosted": true
-    }
-   ]
-  },
-  {
-   "title": "Raven",
-   "slug": "raven-0",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/raven-0",
-   "author": "Teh_Bucket",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/raven-0.jpg",
-   "view_glb": "",
-   "detail": "作者: Teh_Bucket / 形式: blend",
-   "downloads": [
-    {
-     "label": "raven_0.blend",
-     "url": "files/opengameart/raven-0/raven_0.blend",
-     "bytes": 1623452,
-     "hosted": true
-    }
-   ]
-  },
-  {
-   "title": "Sheep",
-   "slug": "sheep",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/sheep",
-   "author": "",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/sheep.jpg",
-   "view_glb": "",
-   "detail": "形式: zip",
-   "downloads": [
-    {
-     "label": "owca.zip",
-     "url": "files/opengameart/sheep/owca.zip",
-     "bytes": 2793053,
-     "hosted": true
-    }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Simple Cat",
@@ -1370,40 +2245,34 @@
    "license": "CC0",
    "rigged": false,
    "animated": true,
-   "anims": [],
+   "anims": [
+    "KeyAction"
+   ],
    "thumb": "thumbs/oga/simple-cat.png",
-   "view_glb": "",
+   "view_glb": "files/converted/simple-cat/cat_2-80.glb",
    "detail": "作者: Puffolotti / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）cat_2-80",
+     "url": "files/converted/simple-cat/cat_2-80.glb",
+     "bytes": 410056,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）cat",
+     "url": "files/converted/simple-cat/cat.glb",
+     "bytes": 400144,
+     "hosted": true
+    },
     {
      "label": "cat.zip",
      "url": "files/opengameart/simple-cat/cat.zip",
      "bytes": 497695,
      "hosted": true
     }
-   ]
-  },
-  {
-   "title": "Textured Cute Monster Pack",
-   "slug": "textured-cute-monster-pack",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/textured-cute-monster-pack",
-   "author": "",
-   "license": "CC0",
-   "rigged": false,
-   "animated": true,
-   "anims": [],
-   "thumb": "thumbs/oga/textured-cute-monster-pack.jpg",
-   "view_glb": "",
-   "detail": "形式: zip",
-   "downloads": [
-    {
-     "label": "cute_animated_monsters_-_aug_2020.zip",
-     "url": "files/opengameart/textured-cute-monster-pack/cute_animated_monsters_-_aug_2020.zip",
-     "bytes": 10181866,
-     "hosted": true
-    }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Baby Dragon",
@@ -1431,7 +2300,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Brachiosaurus",
@@ -1459,7 +2330,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Cartoon Dragon",
@@ -1487,7 +2360,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Chinese Dragon",
@@ -1515,7 +2390,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Crystal Dragon",
@@ -1543,7 +2420,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Dragon Head",
@@ -1571,7 +2450,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Gargoyle Statue",
@@ -1593,7 +2474,9 @@
      "bytes": 754528,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Griffin",
@@ -1621,7 +2504,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Horror Monster",
@@ -1649,7 +2534,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Kitsune Fox",
@@ -1677,7 +2564,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Kraken",
@@ -1705,7 +2594,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Low Poly Dragon",
@@ -1727,7 +2618,9 @@
      "bytes": 611532,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Low Poly Dragon Head",
@@ -1749,7 +2642,9 @@
      "bytes": 604804,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Low Poly T-Rex",
@@ -1771,7 +2666,9 @@
      "bytes": 409836,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Low Poly Unicorn",
@@ -1793,7 +2690,9 @@
      "bytes": 358576,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Mimic Chest",
@@ -1815,7 +2714,9 @@
      "bytes": 1632628,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Phoenix",
@@ -1843,7 +2744,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Pterodactyl",
@@ -1871,7 +2774,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Realistic T-Rex",
@@ -1899,7 +2804,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Red Dragon",
@@ -1927,7 +2834,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Saber-Toothed Cat",
@@ -1955,7 +2864,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Spinosaurus",
@@ -1983,7 +2894,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Spirit Stag",
@@ -2011,7 +2924,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Stegosaurus",
@@ -2039,7 +2954,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "T-Rex",
@@ -2067,7 +2984,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Three-Headed Hydra",
@@ -2095,7 +3014,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Triceratops",
@@ -2123,7 +3044,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Unicorn",
@@ -2151,7 +3074,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Velociraptor",
@@ -2179,7 +3104,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Woolly Mammoth",
@@ -2207,7 +3134,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Wyvern",
@@ -2235,7 +3164,9 @@
      "bytes": 0,
      "hosted": false
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Armadillo Foe",
@@ -2248,9 +3179,21 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/armadillo-foe.png",
-   "view_glb": "",
+   "view_glb": "files/converted/armadillo-foe/armadillo-model.glb",
    "detail": "作者: oofoe / 形式: obj, zip",
    "downloads": [
+    {
+     "label": "GLB（変換）armadillo-model",
+     "url": "files/converted/armadillo-foe/armadillo-model.glb",
+     "bytes": 73144,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）armadillo",
+     "url": "files/converted/armadillo-foe/armadillo.glb",
+     "bytes": 73228,
+     "hosted": true
+    },
     {
      "label": "Armadillo-3D-Pack-Fbx-Obj.zip",
      "url": "files/opengameart/armadillo-foe/Armadillo-3D-Pack-Fbx-Obj.zip",
@@ -2263,29 +3206,9 @@
      "bytes": 190919,
      "hosted": true
     }
-   ]
-  },
-  {
-   "title": "Auroch (Male and female)",
-   "slug": "auroch-male-and-female",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/auroch-male-and-female",
-   "author": "",
-   "license": "CC0",
-   "rigged": false,
-   "animated": false,
-   "anims": [],
-   "thumb": "thumbs/oga/auroch-male-and-female.jpg",
-   "view_glb": "",
-   "detail": "形式: zip",
-   "downloads": [
-    {
-     "label": "auroch.zip",
-     "url": "files/opengameart/auroch-male-and-female/auroch.zip",
-     "bytes": 232341,
-     "hosted": true
-    }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Bird basemesh.",
@@ -2298,16 +3221,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/bird-basemesh.gif",
-   "view_glb": "",
+   "view_glb": "files/converted/bird-basemesh/bird.glb",
    "detail": "作者: vk / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）bird",
+     "url": "files/converted/bird-basemesh/bird.glb",
+     "bytes": 14544,
+     "hosted": true
+    },
     {
      "label": "bird.blend",
      "url": "files/opengameart/bird-basemesh/bird.blend",
      "bytes": 474288,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Brontosaurus",
@@ -2320,16 +3251,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/brontosaurus.png",
-   "view_glb": "",
+   "view_glb": "files/converted/brontosaurus/brontosaurus.glb",
    "detail": "作者: Supergeek / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）brontosaurus",
+     "url": "files/converted/brontosaurus/brontosaurus.glb",
+     "bytes": 49628,
+     "hosted": true
+    },
     {
      "label": "brontosaurus.blend",
      "url": "files/opengameart/brontosaurus/brontosaurus.blend",
      "bytes": 233292,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Bunny without fur",
@@ -2342,16 +3281,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/bunny-without-fur.png",
-   "view_glb": "",
+   "view_glb": "files/converted/bunny-without-fur/bunny.glb",
    "detail": "形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）bunny",
+     "url": "files/converted/bunny-without-fur/bunny.glb",
+     "bytes": 147388,
+     "hosted": true
+    },
     {
      "label": "bunny.zip",
      "url": "files/opengameart/bunny-without-fur/bunny.zip",
      "bytes": 9280799,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Creature: Rat",
@@ -2364,16 +3311,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/creature-rat.png",
-   "view_glb": "",
+   "view_glb": "files/converted/creature-rat/rat_1.glb",
    "detail": "作者: CruzR / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）rat_1",
+     "url": "files/converted/creature-rat/rat_1.glb",
+     "bytes": 38540,
+     "hosted": true
+    },
     {
      "label": "rat_1.blend",
      "url": "files/opengameart/creature-rat/rat_1.blend",
      "bytes": 1133220,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Crocodile",
@@ -2386,16 +3341,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/crocodile.png",
-   "view_glb": "",
+   "view_glb": "files/converted/crocodile/croc2.glb",
    "detail": "形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）croc2",
+     "url": "files/converted/crocodile/croc2.glb",
+     "bytes": 15740,
+     "hosted": true
+    },
     {
      "label": "croc2.zip",
      "url": "files/opengameart/crocodile/croc2.zip",
      "bytes": 78229,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "dinosaur",
@@ -2408,38 +3371,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/dinosaur-1.png",
-   "view_glb": "",
+   "view_glb": "files/converted/dinosaur-1/dinosaur.glb",
    "detail": "形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）dinosaur",
+     "url": "files/converted/dinosaur-1/dinosaur.glb",
+     "bytes": 508720,
+     "hosted": true
+    },
     {
      "label": "model_1.zip",
      "url": "files/opengameart/dinosaur-1/model_1.zip",
      "bytes": 8431764,
      "hosted": true
     }
-   ]
-  },
-  {
-   "title": "Earth Dragon (lowpoly)",
-   "slug": "earth-dragon-lowpoly",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/earth-dragon-lowpoly",
-   "author": "kooow",
-   "license": "CC0",
-   "rigged": false,
-   "animated": false,
-   "anims": [],
-   "thumb": "thumbs/oga/earth-dragon-lowpoly.jpg",
-   "view_glb": "",
-   "detail": "作者: kooow / 形式: zip",
-   "downloads": [
-    {
-     "label": "earthdragon.zip",
-     "url": "files/opengameart/earth-dragon-lowpoly/earthdragon.zip",
-     "bytes": 4006115,
-     "hosted": true
-    }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Egg",
@@ -2452,38 +3401,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/egg.png",
-   "view_glb": "",
+   "view_glb": "files/converted/egg/egg.glb",
    "detail": "作者: Calinou / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）egg",
+     "url": "files/converted/egg/egg.glb",
+     "bytes": 111808,
+     "hosted": true
+    },
     {
      "label": "egg.fbx_.zip",
      "url": "files/opengameart/egg/egg.fbx_.zip",
      "bytes": 161778,
      "hosted": true
     }
-   ]
-  },
-  {
-   "title": "Food Themed Character Pack",
-   "slug": "food-themed-character-pack",
-   "source": "OpenGameArt",
-   "page": "https://opengameart.org/content/food-themed-character-pack",
-   "author": "kooow",
-   "license": "CC0",
-   "rigged": false,
-   "animated": false,
-   "anims": [],
-   "thumb": "thumbs/oga/food-themed-character-pack.png",
-   "view_glb": "",
-   "detail": "作者: kooow / 形式: zip",
-   "downloads": [
-    {
-     "label": "food_themed_character_pack_1.zip",
-     "url": "files/opengameart/food-themed-character-pack/food_themed_character_pack_1.zip",
-     "bytes": 7065973,
-     "hosted": true
-    }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Gorilla (male)",
@@ -2496,16 +3431,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/gorilla-male.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/gorilla-male/gorilla_male.glb",
    "detail": "形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）gorilla_male",
+     "url": "files/converted/gorilla-male/gorilla_male.glb",
+     "bytes": 21280,
+     "hosted": true
+    },
     {
      "label": "gorilla_male.zip",
      "url": "files/opengameart/gorilla-male/gorilla_male.zip",
      "bytes": 83508,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Hand-painted bunny (unrigged version)",
@@ -2518,16 +3461,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/hand-painted-bunny-unrigged-version.png",
-   "view_glb": "",
+   "view_glb": "files/converted/hand-painted-bunny-unrigged-version/bunny.glb",
    "detail": "作者: kooow / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）bunny",
+     "url": "files/converted/hand-painted-bunny-unrigged-version/bunny.glb",
+     "bytes": 17948,
+     "hosted": true
+    },
     {
      "label": "bunny.blend",
      "url": "files/opengameart/hand-painted-bunny-unrigged-version/bunny.blend",
      "bytes": 707324,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Low Poly 3D pig",
@@ -2540,16 +3491,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/low-poly-3d-pig.png",
-   "view_glb": "",
+   "view_glb": "files/converted/low-poly-3d-pig/pig.glb",
    "detail": "形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）pig",
+     "url": "files/converted/low-poly-3d-pig/pig.glb",
+     "bytes": 47316,
+     "hosted": true
+    },
     {
      "label": "Pig.blend",
      "url": "files/opengameart/low-poly-3d-pig/Pig.blend",
      "bytes": 527012,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Mouse basemesh",
@@ -2562,16 +3521,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/mouse-basemesh.gif",
-   "view_glb": "",
+   "view_glb": "files/converted/mouse-basemesh/mouse.glb",
    "detail": "作者: FacadeGaikan / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）mouse",
+     "url": "files/converted/mouse-basemesh/mouse.glb",
+     "bytes": 14012,
+     "hosted": true
+    },
     {
      "label": "mouse.blend",
      "url": "files/opengameart/mouse-basemesh/mouse.blend",
      "bytes": 505064,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Ocean Trio",
@@ -2584,16 +3551,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/ocean-trio.png",
-   "view_glb": "",
+   "view_glb": "files/converted/ocean-trio/ocean-trio.glb",
    "detail": "形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）ocean-trio",
+     "url": "files/converted/ocean-trio/ocean-trio.glb",
+     "bytes": 3861068,
+     "hosted": true
+    },
     {
      "label": "Ocean Trio.zip",
      "url": "files/opengameart/ocean-trio/Ocean Trio.zip",
      "bytes": 3929346,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Pato",
@@ -2606,16 +3581,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/pato.png",
-   "view_glb": "",
+   "view_glb": "files/converted/pato/pato_1.glb",
    "detail": "作者: Luíz Felipe / 形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）pato_1",
+     "url": "files/converted/pato/pato_1.glb",
+     "bytes": 20716,
+     "hosted": true
+    },
     {
      "label": "pato_1.blend",
      "url": "files/opengameart/pato/pato_1.blend",
      "bytes": 477864,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Pinguin (low poly)",
@@ -2628,16 +3611,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/pinguin-low-poly.png",
-   "view_glb": "",
+   "view_glb": "files/converted/pinguin-low-poly/pingouin-new.glb",
    "detail": "形式: 7z",
    "downloads": [
+    {
+     "label": "GLB（変換）pingouin-new",
+     "url": "files/converted/pinguin-low-poly/pingouin-new.glb",
+     "bytes": 15220,
+     "hosted": true
+    },
     {
      "label": "Pinguin.7z",
      "url": "files/opengameart/pinguin-low-poly/Pinguin.7z",
      "bytes": 111710,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Piranha",
@@ -2650,16 +3641,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/piranha.png",
-   "view_glb": "",
+   "view_glb": "files/converted/piranha/piranha_mesh.glb",
    "detail": "作者: Raymond Eternal / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）piranha_mesh",
+     "url": "files/converted/piranha/piranha_mesh.glb",
+     "bytes": 8340,
+     "hosted": true
+    },
     {
      "label": "piranha_model_0.zip",
      "url": "files/opengameart/piranha/piranha_model_0.zip",
      "bytes": 173310,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Pixispider",
@@ -2672,16 +3671,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/pixispider.png",
-   "view_glb": "",
+   "view_glb": "files/converted/pixispider/pixispider.glb",
    "detail": "形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）pixispider",
+     "url": "files/converted/pixispider/pixispider.glb",
+     "bytes": 19708,
+     "hosted": true
+    },
     {
      "label": "pixispider.blend",
      "url": "files/opengameart/pixispider/pixispider.blend",
      "bytes": 526800,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Porco",
@@ -2694,16 +3701,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/porco.png",
-   "view_glb": "",
+   "view_glb": "files/converted/porco/porco.glb",
    "detail": "形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）porco",
+     "url": "files/converted/porco/porco.glb",
+     "bytes": 21860,
+     "hosted": true
+    },
     {
      "label": "porco.blend",
      "url": "files/opengameart/porco/porco.blend",
      "bytes": 466672,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Porco_Assync",
@@ -2716,16 +3731,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/porcoassync.png",
-   "view_glb": "",
+   "view_glb": "files/converted/porcoassync/porco_assync_0.glb",
    "detail": "形式: blend",
    "downloads": [
+    {
+     "label": "GLB（変換）porco_assync_0",
+     "url": "files/converted/porcoassync/porco_assync_0.glb",
+     "bytes": 43124,
+     "hosted": true
+    },
     {
      "label": "porco_assync_0.blend",
      "url": "files/opengameart/porcoassync/porco_assync_0.blend",
      "bytes": 511100,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Rat Pack",
@@ -2738,9 +3761,27 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/rat-pack.png",
-   "view_glb": "",
+   "view_glb": "files/converted/rat-pack/rat_3.glb",
    "detail": "作者: MELLE / 形式: blend, zip",
    "downloads": [
+    {
+     "label": "GLB（変換）rat_3",
+     "url": "files/converted/rat-pack/rat_3.glb",
+     "bytes": 84528,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）ratpack",
+     "url": "files/converted/rat-pack/ratpack.glb",
+     "bytes": 176640,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）rat",
+     "url": "files/converted/rat-pack/rat.glb",
+     "bytes": 84528,
+     "hosted": true
+    },
     {
      "label": "Rat-Pack-All-Files.zip",
      "url": "files/opengameart/rat-pack/Rat-Pack-All-Files.zip",
@@ -2753,7 +3794,9 @@
      "bytes": 682128,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Robot pack 3D",
@@ -2766,16 +3809,30 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/robot-pack-3d.png",
-   "view_glb": "",
+   "view_glb": "files/converted/robot-pack-3d/basemodel.glb",
    "detail": "作者: hosch / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）basemodel",
+     "url": "files/converted/robot-pack-3d/basemodel.glb",
+     "bytes": 17840,
+     "hosted": true
+    },
+    {
+     "label": "GLB（変換）smallermodel",
+     "url": "files/converted/robot-pack-3d/smallermodel.glb",
+     "bytes": 27096,
+     "hosted": true
+    },
     {
      "label": "Robots.zip",
      "url": "files/opengameart/robot-pack-3d/Robots.zip",
      "bytes": 56100,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "rubberduck",
@@ -2788,16 +3845,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/rubberduck.png",
-   "view_glb": "",
+   "view_glb": "files/converted/rubberduck/rubberduck.glb",
    "detail": "作者: plaggy / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）rubberduck",
+     "url": "files/converted/rubberduck/rubberduck.glb",
+     "bytes": 34560,
+     "hosted": true
+    },
     {
      "label": "rubberduck.zip",
      "url": "files/opengameart/rubberduck/rubberduck.zip",
      "bytes": 449796,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   },
   {
    "title": "Snail 3D Model",
@@ -2819,7 +3884,9 @@
      "bytes": 4999996,
      "hosted": true
     }
-   ]
+   ],
+   "game": false,
+   "vrm": ""
   },
   {
    "title": "White Rhinoceros",
@@ -2832,16 +3899,24 @@
    "animated": false,
    "anims": [],
    "thumb": "thumbs/oga/white-rhinoceros.jpg",
-   "view_glb": "",
+   "view_glb": "files/converted/white-rhinoceros/white_rhino.glb",
    "detail": "作者: Julius / 形式: zip",
    "downloads": [
+    {
+     "label": "GLB（変換）white_rhino",
+     "url": "files/converted/white-rhinoceros/white_rhino.glb",
+     "bytes": 15912,
+     "hosted": true
+    },
     {
      "label": "white_rhino.zip",
      "url": "files/opengameart/white-rhinoceros/white_rhino.zip",
      "bytes": 78157,
      "hosted": true
     }
-   ]
+   ],
+   "game": true,
+   "vrm": ""
   }
  ]
 }
