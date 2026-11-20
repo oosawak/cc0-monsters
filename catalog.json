@@ -47,6 +47,12 @@
      "url": "https://grab3d.com/dl/stone-golem/stone-golem.glb",
      "bytes": 0,
      "hosted": false
+    },
+    {
+     "label": "VRM版",
+     "url": "files/vrm/stone-golem.vrm",
+     "bytes": 14708156,
+     "hosted": true
     }
    ]
   },
@@ -96,6 +102,12 @@
      "url": "https://grab3d.com/dl/stylized-zombie/stylized-zombie.glb",
      "bytes": 0,
      "hosted": false
+    },
+    {
+     "label": "VRM版",
+     "url": "files/vrm/stylized-zombie.vrm",
+     "bytes": 14157668,
+     "hosted": true
     }
    ]
   },
@@ -145,6 +157,12 @@
      "url": "https://grab3d.com/dl/werewolf/werewolf.glb",
      "bytes": 0,
      "hosted": false
+    },
+    {
+     "label": "VRM版",
+     "url": "files/vrm/werewolf.vrm",
+     "bytes": 14286624,
+     "hosted": true
     }
    ]
   },
@@ -194,6 +212,12 @@
      "url": "https://grab3d.com/dl/yeti/yeti.glb",
      "bytes": 0,
      "hosted": false
+    },
+    {
+     "label": "VRM版",
+     "url": "files/vrm/yeti.vrm",
+     "bytes": 14704792,
+     "hosted": true
     }
    ]
   },
