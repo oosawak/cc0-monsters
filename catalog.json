@@ -771,9 +771,9 @@
     },
     {
      "label": "Dromaeosaur.blend",
-     "url": "https://opengameart.org/sites/default/files/Dromaeosaur.blend",
+     "url": "files/opengameart/dromaeosaur-dinosaur/Dromaeosaur.blend",
      "bytes": 61768240,
-     "hosted": false
+     "hosted": true
     }
    ],
    "game": true,
