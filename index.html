@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CC0モンスター・動物3Dモデル集</title>
+<meta name="description" content="CC0の3Dモンスター・動物モデルを集めたカタログ。リグ／アニメ付きを優先収録。OpenGameArt、Grab3D、Quaternius出典、全件ライセンス確認済み。">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+<style>
+  :root { --ink:#1c2430; --sub:#5b6675; --line:#dde3ea; --accent:#2563eb; --rig:#0a7d4f; --anim:#7c3aed; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,"Hiragino Kaku Gothic ProN",sans-serif; color:var(--ink); background:#f4f6f9; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:18px 20px 14px; position:sticky; top:0; z-index:20; }
+  h1 { font-size:19px; margin:0 0 4px; }
+  .counts { color:var(--sub); font-size:13px; margin-bottom:12px; line-height:1.6; }
+  .bar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  #q { flex:1 1 240px; font-size:16px; padding:10px 12px; border:1px solid var(--line); border-radius:10px; }
+  .chip { border:1px solid var(--line); background:#fff; border-radius:999px; padding:8px 14px; font-size:14px; cursor:pointer; }
+  .chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .chip.rig.on { background:var(--rig); border-color:var(--rig); }
+  .chip.anim.on { background:var(--anim); border-color:var(--anim); }
+  #status { padding:12px 20px 0; color:var(--sub); font-size:13px; }
+  #grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:14px; padding:14px 20px 30px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; }
+  .imgwrap { aspect-ratio:4/3; background:#eef1f5; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .imgwrap img { width:100%; height:100%; object-fit:cover; }
+  .noimg { color:var(--sub); font-size:13px; padding:10px; text-align:center; }
+  .body { padding:10px 12px 12px; display:flex; flex-direction:column; gap:7px; flex:1; }
+  .title { font-weight:700; font-size:15px; line-height:1.35; }
+  .meta { color:var(--sub); font-size:12px; line-height:1.5; }
+  .badges { display:flex; gap:5px; flex-wrap:wrap; }
+  .badge { font-size:11px; border-radius:999px; padding:2px 8px; border:1px solid var(--line); background:#f7f9fb; }
+  .badge.rig { background:#e6f6ee; border-color:#9fd8bb; color:var(--rig); font-weight:700; }
+  .badge.anim { background:#f0eafd; border-color:#cdbcf5; color:var(--anim); font-weight:700; }
+  .badge.cc0 { background:#eef4ff; border-color:#b9cdf5; color:var(--accent); font-weight:700; }
+  .btns { display:flex; gap:6px; flex-wrap:wrap; margin-top:auto; }
+  .btn { font-size:13px; border:1px solid var(--line); background:#fff; border-radius:8px; padding:7px 10px; cursor:pointer; text-decoration:none; color:var(--ink); }
+  .btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  dialog { border:none; border-radius:14px; padding:0; width:min(860px,94vw); }
+  dialog::backdrop { background:rgba(10,15,25,.55); }
+  .dlg-head { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid var(--line); }
+  .dlg-head b { font-size:15px; }
+  model-viewer { width:100%; height:62vh; background:#eef1f5; }
+  .dlg-foot { padding:10px 16px; color:var(--sub); font-size:12px; line-height:1.6; }
+  footer { padding:0 20px 34px; color:var(--sub); font-size:12px; line-height:1.7; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>CC0モンスター・動物 3Dモデル集</h1>
+  <div class="counts" id="counts">読み込み中…</div>
+  <div class="bar">
+    <input id="q" type="search" placeholder="名前で検索（例: dragon, wolf, slime）">
+    <button class="chip src on" data-src="all">全部</button>
+    <button class="chip src" data-src="OpenGameArt">OpenGameArt</button>
+    <button class="chip src" data-src="Grab3D">Grab3D</button>
+    <button class="chip src" data-src="Quaternius">Quaternius</button>
+    <button class="chip rig" id="rigOnly">リグ付きのみ</button>
+    <button class="chip anim" id="animOnly">アニメ付きのみ</button>
+    <button class="chip" id="hostedOnly">このサイトからDL可のみ</button>
+  </div>
+</header>
+<div id="status"></div>
+<main id="grid"></main>
+<footer>
+  全モデル <b>CC0</b>（出典ページでライセンス表示を確認済み）。クレジット表記は不要ですが、各カードの出典リンクを残してあります。<br>
+  「3Dで見る」は Grab3D のプレビュー用GLB（軽量版）を使います。ゲーム用にはカードのダウンロード（リグ版GLB／FBX、Blenderファイル等）を使ってください。<br>
+  OpenGameArt の一部（100MB超のファイル）は GitHub の制限のため元サイトへのリンクのみです。収集方法と検証結果は <a href="https://github.com/oosawak/cc0-monsters">リポジトリのREADME</a> にあります。
+</footer>
+
+<dialog id="viewerDlg">
+  <div class="dlg-head"><b id="dlgTitle"></b><button class="btn" id="dlgClose">閉じる</button></div>
+  <model-viewer id="mv" camera-controls auto-rotate autoplay shadow-intensity="1"></model-viewer>
+  <div class="dlg-foot" id="dlgFoot"></div>
+</dialog>
+
+<script>
+let DATA=[], srcFilter='all', rigOnly=false, animOnly=false, hostedOnly=false;
+const grid=document.getElementById('grid'), statusEl=document.getElementById('status');
+function mb(n){ return n? (n/1048576).toFixed(1)+'MB' : ''; }
+function esc(s){ return (s||'').replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function render(){
+  const q=document.getElementById('q').value.trim().toLowerCase();
+  const list=DATA.filter(e=>{
+    if(srcFilter!=='all' && e.source!==srcFilter) return false;
+    if(rigOnly && !e.rigged) return false;
+    if(animOnly && !e.animated) return false;
+    if(hostedOnly && !e.downloads.some(d=>d.hosted)) return false;
+    if(q && !(e.title+' '+e.slug+' '+(e.author||'')).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  statusEl.textContent=list.length+' 件';
+  grid.innerHTML=list.map(e=>{
+    const badges=['<span class="badge cc0">CC0</span>',
+      e.rigged?'<span class="badge rig">リグ付き</span>':'',
+      e.animated?'<span class="badge anim">アニメ付き</span>':'',
+      e.source?('<span class="badge">'+esc(e.source)+'</span>'):''].join('');
+    const dl=e.downloads.map(d=>'<a class="btn'+(d.hosted?' primary':'')+'" href="'+esc(d.url)+'" '+(d.hosted?'download':'target="_blank" rel="noopener"')+'>'+esc(d.label)+(d.bytes?' '+mb(d.bytes):'')+'</a>').join('');
+    const view=e.view_glb?'<button class="btn" data-view="'+esc(e.view_glb)+'" data-title="'+esc(e.title)+'" data-anims="'+esc((e.anims||[]).join(', '))+'">3Dで見る</button>':'';
+    return '<article class="card"><div class="imgwrap">'+(e.thumb?'<img loading="lazy" src="'+esc(e.thumb)+'" alt="">':'<div class="noimg">'+esc(e.title)+'</div>')+'</div>'
+      +'<div class="body"><div class="title">'+esc(e.title)+'</div><div class="badges">'+badges+'</div>'
+      +'<div class="meta">'+esc(e.detail||'')+'</div>'
+      +'<div class="btns">'+view+dl+'<a class="btn" href="'+esc(e.page)+'" target="_blank" rel="noopener">出典</a></div></div></article>';
+  }).join('');
+  grid.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{
+    const dlg=document.getElementById('viewerDlg'), mv=document.getElementById('mv');
+    document.getElementById('dlgTitle').textContent=b.dataset.title;
+    document.getElementById('dlgFoot').textContent=b.dataset.anims?('収録アニメ: '+b.dataset.anims):'';
+    mv.src=b.dataset.view; dlg.showModal();
+  }));
+}
+document.getElementById('dlgClose').addEventListener('click',()=>document.getElementById('viewerDlg').close());
+document.getElementById('q').addEventListener('input',render);
+document.querySelectorAll('.chip.src').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip.src').forEach(x=>x.classList.remove('on')); c.classList.add('on'); srcFilter=c.dataset.src; render();
+}));
+for(const [id,fn] of [['rigOnly',v=>rigOnly=v],['animOnly',v=>animOnly=v],['hostedOnly',v=>hostedOnly=v]]){
+  document.getElementById(id).addEventListener('click',ev=>{ const on=!ev.target.classList.contains('on'); ev.target.classList.toggle('on',on); fn(on); render(); });
+}
+fetch('catalog.json').then(r=>r.json()).then(d=>{
+  DATA=d.entries;
+  document.getElementById('counts').innerHTML=d.summary+'<br>出典: OpenGameArt「CC0 - 3D Animals / Creatures」、Grab3D creatures、Quaternius（CC0パックのみ）';
+  render();
+}).catch(e=>{ statusEl.textContent='catalog.json の読み込みに失敗しました'; });
+</script>
+</body>
+</html>
